@@ -1,0 +1,15 @@
+slug: official-mcp-servers
+title: Official MCP Servers
+description: Reference MCP server implementations maintained by the Model Context Protocol team.
+url: https://github.com/modelcontextprotocol/servers
+format: md
+type: collection
+tags:
+  - official
+  - reference
+  - canonical
+category: other
+author: modelcontextprotocol
+notes: |
+  The canonical set of MCP server implementations. Each server lives in its
+  own subdirectory under src/. The README.md provides an overview with links.

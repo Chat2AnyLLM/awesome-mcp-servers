@@ -1,0 +1,16 @@
+slug: punkpeye-awesome
+title: Punkpeye Awesome MCP Servers
+description: Community-curated list of 1000+ MCP servers across all categories. Aggregated via markdown parsing.
+url: https://github.com/punkpeye/awesome-mcp-servers
+format: md
+type: collection
+tags:
+  - community
+  - aggregated
+  - comprehensive
+category: other
+author: punkpeye
+notes: |
+  The main community list of MCP servers. README.md contains a categorized
+  markdown list with links to individual server repos. The build system
+  scrapes this file to extract server entries.

@@ -1,0 +1,11 @@
+slug: sqlite
+title: SQLite MCP Server
+description: SQLite database access with query execution, schema inspection, and safe write operations.
+url: https://github.com/modelcontextprotocol/servers/tree/main/src/sqlite
+tags:
+  - database
+  - sqlite
+  - sql
+category: databases
+author: modelcontextprotocol
+license: MIT

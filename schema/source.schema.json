@@ -1,0 +1,72 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/Chat2AnyLLM/awesome-mcp-servers/schema/source.schema.json",
+  "title": "External MCP Server Source",
+  "description": "Schema for linking to an external GitHub repo or file containing MCP servers",
+  "type": "object",
+  "required": ["slug", "title", "description", "url", "format", "type", "author"],
+  "additionalProperties": false,
+  "properties": {
+    "slug": {
+      "type": "string",
+      "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$",
+      "description": "URL-safe identifier, must match the filename"
+    },
+    "title": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 100
+    },
+    "description": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 300
+    },
+    "url": {
+      "type": "string",
+      "pattern": "^https://github\\.com/.+",
+      "description": "GitHub URL to a file or repository containing MCP servers"
+    },
+    "format": {
+      "type": "string",
+      "enum": ["yaml", "md", "csv", "json", "mixed"],
+      "description": "Format of server files at the source"
+    },
+    "type": {
+      "type": "string",
+      "enum": ["single-server", "collection"],
+      "description": "Whether the link points to a single server file or a collection"
+    },
+    "tags": {
+      "type": "array",
+      "items": { "type": "string", "minLength": 1 },
+      "minItems": 1,
+      "uniqueItems": true
+    },
+    "category": {
+      "type": "string",
+      "enum": [
+        "ai-ml",
+        "databases",
+        "file-systems",
+        "version-control",
+        "communication",
+        "cloud-platforms",
+        "developer-tools",
+        "web",
+        "productivity",
+        "security",
+        "data",
+        "other"
+      ]
+    },
+    "author": {
+      "type": "string",
+      "minLength": 1
+    },
+    "notes": {
+      "type": "string",
+      "description": "Optional notes about the source, e.g. how to use it"
+    }
+  }
+}

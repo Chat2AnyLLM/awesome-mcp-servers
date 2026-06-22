@@ -1,0 +1,12 @@
+slug: github
+title: GitHub MCP Server
+description: GitHub API integration for repository management, issues, pull requests, and code search.
+url: https://github.com/modelcontextprotocol/servers/tree/main/src/github
+tags:
+  - github
+  - git
+  - version-control
+  - api
+category: version-control
+author: modelcontextprotocol
+license: MIT

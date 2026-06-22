@@ -1,0 +1,12 @@
+{
+  "version": "1.0.0",
+  "generated_at": "2026-06-22T09:44:46Z",
+  "servers": {
+    "count": 5,
+    "file": "servers.json"
+  },
+  "sources": {
+    "count": 3,
+    "file": "sources.json"
+  }
+}

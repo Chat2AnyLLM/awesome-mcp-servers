@@ -1,0 +1,11 @@
+slug: filesystem
+title: Filesystem MCP Server
+description: Local filesystem access with secure defaults, read/write/search capabilities for files and directories.
+url: https://github.com/modelcontextprotocol/servers/tree/main/src/filesystem
+tags:
+  - filesystem
+  - file-io
+  - local-storage
+category: file-systems
+author: modelcontextprotocol
+license: MIT

@@ -1,0 +1,29 @@
+version: "1.0.0"
+description: "Aggregates MCP server entries from local files, GitHub repos, and remote JSON endpoints into a unified collection."
+
+output:
+  dir: dist
+  formats: [json, csv]
+
+sources:
+  # Local hand-curated server entries (validated against schema)
+  - name: "Local Servers"
+    type: local
+    path: servers/
+    description: "Hand-curated MCP server entries maintained in this repo"
+
+  # Punkpeye's community-curated awesome-mcp-servers list
+  - name: "Punkpeye Awesome MCP Servers"
+    type: github
+    url: https://github.com/punkpeye/awesome-mcp-servers
+    format: md
+    file_path: README.md
+    description: "Community-curated list of 1000+ MCP servers"
+
+  # Official MCP server implementations from the protocol team
+  - name: "Official MCP Servers"
+    type: github
+    url: https://github.com/modelcontextprotocol/servers
+    format: md
+    file_path: README.md
+    description: "Reference MCP server implementations maintained by the MCP team"

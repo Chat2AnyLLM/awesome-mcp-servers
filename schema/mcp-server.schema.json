@@ -1,0 +1,70 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/Chat2AnyLLM/awesome-mcp-servers/schema/mcp-server.schema.json",
+  "title": "MCP Server",
+  "description": "Schema for a single curated MCP server entry",
+  "type": "object",
+  "required": ["slug", "title", "description", "url", "tags", "category", "author"],
+  "additionalProperties": false,
+  "properties": {
+    "slug": {
+      "type": "string",
+      "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$",
+      "description": "URL-safe identifier, must match the filename"
+    },
+    "title": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 100
+    },
+    "description": {
+      "type": "string",
+      "minLength": 10,
+      "maxLength": 300
+    },
+    "url": {
+      "type": "string",
+      "pattern": "^https?://",
+      "description": "URL to the MCP server repository or documentation"
+    },
+    "tags": {
+      "type": "array",
+      "items": { "type": "string", "minLength": 1 },
+      "minItems": 1,
+      "uniqueItems": true
+    },
+    "category": {
+      "type": "string",
+      "enum": [
+        "ai-ml",
+        "databases",
+        "file-systems",
+        "version-control",
+        "communication",
+        "cloud-platforms",
+        "developer-tools",
+        "web",
+        "productivity",
+        "security",
+        "data",
+        "other"
+      ]
+    },
+    "author": {
+      "type": "string",
+      "minLength": 1
+    },
+    "npm": {
+      "type": "string",
+      "description": "NPM package name if installable via npx"
+    },
+    "docker": {
+      "type": "string",
+      "description": "Docker image name if available as a container"
+    },
+    "license": {
+      "type": "string",
+      "description": "License identifier (e.g., MIT, Apache-2.0)"
+    }
+  }
+}

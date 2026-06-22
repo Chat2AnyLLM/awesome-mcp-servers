@@ -1,0 +1,11 @@
+slug: brave-search
+title: Brave Search MCP Server
+description: Web and local search powered by the Brave Search API with automatic result summarization.
+url: https://github.com/modelcontextprotocol/servers/tree/main/src/brave-search
+tags:
+  - search
+  - web
+  - brave
+category: web
+author: modelcontextprotocol
+license: MIT

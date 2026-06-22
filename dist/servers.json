@@ -1,0 +1,80 @@
+{
+  "version": "1.0.0",
+  "generated_at": "2026-06-22T09:44:46Z",
+  "count": 5,
+  "servers": [
+    {
+      "slug": "brave-search",
+      "title": "Brave Search MCP Server",
+      "description": "Web and local search powered by the Brave Search API with automatic result summarization.",
+      "url": "https://github.com/modelcontextprotocol/servers/tree/main/src/brave-search",
+      "tags": [
+        "search",
+        "web",
+        "brave"
+      ],
+      "category": "web",
+      "author": "modelcontextprotocol",
+      "license": "MIT",
+      "source": "Local Servers"
+    },
+    {
+      "slug": "filesystem",
+      "title": "Filesystem MCP Server",
+      "description": "Local filesystem access with secure defaults, read/write/search capabilities for files and directories.",
+      "url": "https://github.com/modelcontextprotocol/servers/tree/main/src/filesystem",
+      "tags": [
+        "filesystem",
+        "file-io",
+        "local-storage"
+      ],
+      "category": "file-systems",
+      "author": "modelcontextprotocol",
+      "license": "MIT",
+      "source": "Local Servers"
+    },
+    {
+      "slug": "github",
+      "title": "GitHub MCP Server",
+      "description": "GitHub API integration for repository management, issues, pull requests, and code search.",
+      "url": "https://github.com/modelcontextprotocol/servers/tree/main/src/github",
+      "tags": [
+        "github",
+        "git",
+        "version-control",
+        "api"
+      ],
+      "category": "version-control",
+      "author": "modelcontextprotocol",
+      "license": "MIT",
+      "source": "Local Servers"
+    },
+    {
+      "slug": "sqlite",
+      "title": "SQLite MCP Server",
+      "description": "SQLite database access with query execution, schema inspection, and safe write operations.",
+      "url": "https://github.com/modelcontextprotocol/servers/tree/main/src/sqlite",
+      "tags": [
+        "database",
+        "sqlite",
+        "sql"
+      ],
+      "category": "databases",
+      "author": "modelcontextprotocol",
+      "license": "MIT",
+      "source": "Local Servers"
+    },
+    {
+      "slug": "readme",
+      "title": "Readme",
+      "description": "[![ไทย](https://img.shields.io/badge/Thai-Click-blue)](README-th.md)\n[![English](https://img.shields.io/badge/English-Click-yellow)](README.md)\n[![繁體中文](https://img.shields.io/badge/繁體中文-點擊查看-orange)](README-zh_TW.md)\n[![简体中文](https://img.shields.io/badge/简体中文-点击查看-orange)](README-zh.md)\n[![日本語](htt",
+      "url": "",
+      "tags": [
+        "imported"
+      ],
+      "category": "other",
+      "author": "Punkpeye Awesome MCP Servers",
+      "source": "Punkpeye Awesome MCP Servers"
+    }
+  ]
+}

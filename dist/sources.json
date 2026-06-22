@@ -1,0 +1,32 @@
+{
+  "version": "1.0.0",
+  "generated_at": "2026-06-22T09:44:46Z",
+  "count": 3,
+  "sources": [
+    {
+      "name": "Local Servers",
+      "type": "local",
+      "path": "servers/",
+      "description": "Hand-curated MCP server entries maintained in this repo",
+      "count": 4
+    },
+    {
+      "name": "Punkpeye Awesome MCP Servers",
+      "type": "github",
+      "url": "https://github.com/punkpeye/awesome-mcp-servers",
+      "format": "md",
+      "file_path": "README.md",
+      "description": "Community-curated list of 1000+ MCP servers",
+      "count": 1
+    },
+    {
+      "name": "Official MCP Servers",
+      "type": "github",
+      "url": "https://github.com/modelcontextprotocol/servers",
+      "format": "md",
+      "file_path": "README.md",
+      "description": "Reference MCP server implementations maintained by the MCP team",
+      "count": 1
+    }
+  ]
+}
