@@ -3,6 +3,7 @@
 "filesystem","Filesystem MCP Server","Local filesystem access with secure defaults, read/write/search capabilities for files and directories.","https://github.com/modelcontextprotocol/servers/tree/main/src/filesystem","filesystem;file-io;local-storage","file-systems","modelcontextprotocol","Local Servers"
 "github","GitHub MCP Server","GitHub API integration for repository management, issues, pull requests, and code search.","https://github.com/modelcontextprotocol/servers/tree/main/src/github","github;git;version-control;api","version-control","modelcontextprotocol","Local Servers"
 "sqlite","SQLite MCP Server","SQLite database access with query execution, schema inspection, and safe write operations.","https://github.com/modelcontextprotocol/servers/tree/main/src/sqlite","database;sqlite;sql","databases","modelcontextprotocol","Local Servers"
+"xquik","Xquik MCP Server","Remote MCP server for authenticated X/Twitter data extraction, publishing, account, and automation workflows.","https://github.com/Xquik-dev/x-twitter-scraper","x;twitter;social-media;automation;api","web","Xquik-dev","Local Servers"
 "readme","Readme","[![ไทย](https://img.shields.io/badge/Thai-Click-blue)](README-th.md)
 [![English](https://img.shields.io/badge/English-Click-yellow)](README.md)
 [![繁體中文](https://img.shields.io/badge/繁體中文-點擊查看-orange)](README-zh_TW.md)

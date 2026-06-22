@@ -1,7 +1,7 @@
 {
   "version": "1.0.0",
-  "generated_at": "2026-06-22T09:44:46Z",
-  "count": 5,
+  "generated_at": "2026-06-22T09:58:21Z",
+  "count": 6,
   "servers": [
     {
       "slug": "brave-search",
@@ -61,6 +61,23 @@
       ],
       "category": "databases",
       "author": "modelcontextprotocol",
+      "license": "MIT",
+      "source": "Local Servers"
+    },
+    {
+      "slug": "xquik",
+      "title": "Xquik MCP Server",
+      "description": "Remote MCP server for authenticated X/Twitter data extraction, publishing, account, and automation workflows.",
+      "url": "https://github.com/Xquik-dev/x-twitter-scraper",
+      "tags": [
+        "x",
+        "twitter",
+        "social-media",
+        "automation",
+        "api"
+      ],
+      "category": "web",
+      "author": "Xquik-dev",
       "license": "MIT",
       "source": "Local Servers"
     },
