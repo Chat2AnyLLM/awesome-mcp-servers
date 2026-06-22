@@ -160,38 +160,20 @@ See the full list at [github.com/modelcontextprotocol/servers](https://github.co
 
 | Metric | Count |
 |--------|-------|
-| Unified servers (in `dist/servers.json`) | 5 |
-| Direct servers (from `servers/`) | 4 |
+| Unified servers (in `dist/servers.json`) | 382 |
+| Direct servers (from `servers/`) | 382 |
 | Configured sources | 3 |
-| Scraped servers cached in `scraped/` | 2 |
+| Scraped servers cached in `scraped/` | 0 |
 
 ### Configured Sources
 
 | Source | Type | Location | Format | Loaded |
 |--------|------|----------|--------|--------|
-| Local Servers | local | `servers/` | - | 4 |
-| Punkpeye Awesome MCP Servers | github | [https://github.com/punkpeye/awesome-mcp-servers](https://github.com/punkpeye/awesome-mcp-servers) | md | 1 |
-| Official MCP Servers | github | [https://github.com/modelcontextprotocol/servers](https://github.com/modelcontextprotocol/servers) | md | 1 |
+| Local Servers | local | `servers/` | - | 382 |
+| Punkpeye Awesome MCP Servers | github | [https://github.com/punkpeye/awesome-mcp-servers](https://github.com/punkpeye/awesome-mcp-servers) | md | 0 |
+| Official MCP Servers | github | [https://github.com/modelcontextprotocol/servers](https://github.com/modelcontextprotocol/servers) | md | 0 |
 
 ### Scraped Servers
-
-<details>
-<summary><strong>Official Mcp Servers</strong> (1 servers)</summary>
-
-| # | Title | Description |
-|---|-------|-------------|
-| 1 | Readme | # Model Context Protocol servers  This repository is a coll… |
-
-</details>
-
-<details>
-<summary><strong>Punkpeye Awesome Mcp Servers</strong> (1 servers)</summary>
-
-| # | Title | Description |
-|---|-------|-------------|
-| 1 | Readme | [![ไทย](https://img.shields.io/badge/Thai-Click-blue)](READ… |
-
-</details>
 ## License
 
 MIT

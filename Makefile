@@ -8,6 +8,7 @@ validate:
 
 build:
 	python scripts/build.py
+	python scripts/update_readme.py
 
 test:
 	python -m unittest discover -s tests -v

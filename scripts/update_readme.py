@@ -142,7 +142,7 @@ def generate_stats_section() -> str:
 def main() -> int:
     stats_section = generate_stats_section()
 
-    readme_content = README_PATH.read_text()
+    readme_content = README_PATH.read_text(encoding="utf-8")
 
     # Replace existing Stats section or insert before License
     stats_pattern = r'## Stats\n.*?(?=\n## [^SC]|\Z)'
@@ -156,7 +156,7 @@ def main() -> int:
         else:
             readme_content += "\n" + stats_section
 
-    README_PATH.write_text(readme_content)
+    README_PATH.write_text(readme_content, encoding="utf-8")
     print("README.md updated with current stats.")
     return 0
 

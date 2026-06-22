@@ -22,11 +22,8 @@ jobs:
       - name: Install dependencies
         run: pip install -r requirements.txt
 
-      - name: Build unified collection
+      - name: Build unified collection and README
         run: make build
-
-      - name: Update README stats
-        run: python scripts/update_readme.py
 
       - name: Check for changes
         id: changes

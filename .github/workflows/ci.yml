@@ -23,13 +23,13 @@ jobs:
       - name: Validate servers
         run: make validate
 
-      - name: Build dist
+      - name: Build generated files
         run: make build
 
-      - name: Check dist is up to date
+      - name: Check generated files are up to date
         run: |
-          if ! git diff --quiet dist/; then
-            echo "ERROR: dist/ is out of date. Run 'make build' and commit the changes."
-            git diff dist/
+          if ! git diff --quiet dist/ README.md; then
+            echo "ERROR: generated files are out of date. Run 'make build', then commit the changes."
+            git diff -- dist/ README.md
             exit 1
           fi
