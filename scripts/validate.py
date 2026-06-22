@@ -24,10 +24,15 @@ def validate_file(file_path: Path, schema: dict) -> list[str]:
     """Validate a single YAML file against a schema. Returns list of error messages."""
     errors = []
     try:
-        with open(file_path) as f:
-            data = yaml.safe_load(f)
+        with open(file_path, encoding="utf-8") as f:
+            if file_path.suffix == ".json":
+                data = json.load(f)
+            else:
+                data = yaml.safe_load(f)
     except yaml.YAMLError as e:
         return [f"YAML parse error: {e}"]
+    except json.JSONDecodeError as e:
+        return [f"JSON parse error: {e}"]
 
     if data is None:
         return ["File is empty"]
@@ -37,11 +42,12 @@ def validate_file(file_path: Path, schema: dict) -> list[str]:
     for error in validator.iter_errors(data):
         errors.append(f"  {error.json_path}: {error.message}")
 
-    # Check slug matches filename
+    # Check identifier matches filename
     expected_slug = file_path.stem
-    if data.get("slug") != expected_slug:
+    identifier = data.get("slug") or data.get("name")
+    if data.get("slug") and identifier != expected_slug:
         errors.append(
-            f"  slug '{data.get('slug')}' does not match filename '{expected_slug}'"
+            f"  identifier '{identifier}' does not match filename '{expected_slug}'"
         )
 
     return errors
@@ -49,7 +55,7 @@ def validate_file(file_path: Path, schema: dict) -> list[str]:
 
 def validate_directory(directory: Path, schema: dict, label: str) -> int:
     """Validate all YAML files in a directory. Returns error count."""
-    yaml_files = sorted(directory.glob("*.yaml"))
+    yaml_files = sorted(directory.rglob("*.yaml")) + sorted(directory.rglob("*.json"))
 
     if not yaml_files:
         print(f"  (no {label} files found)")
@@ -84,7 +90,7 @@ def main() -> int:
         print(f"\n{total_errors} error(s) found.")
         return 1
 
-    server_count = len(list(SERVERS_DIR.glob("*.yaml")))
+    server_count = len(list(SERVERS_DIR.rglob("*.yaml"))) + len(list(SERVERS_DIR.rglob("*.json")))
     source_count = len(list(SOURCES_DIR.glob("*.yaml")))
     print(f"\nAll valid: {server_count} server(s), {source_count} source(s).")
     return 0

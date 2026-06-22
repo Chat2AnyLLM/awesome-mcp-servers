@@ -104,6 +104,19 @@ def normalize_server(
     if not isinstance(server, dict):
         return None
 
+    if server.get("name") and server.get("installations"):
+        normalized = dict(server)
+        normalized.setdefault("display_name", normalized["name"])
+        normalized.setdefault("slug", slugify(normalized["name"]))
+        normalized.setdefault("title", normalized.get("display_name") or normalized["name"])
+        repository = normalized.get("repository")
+        if isinstance(repository, dict):
+            normalized.setdefault("url", repository.get("url", ""))
+        normalized.setdefault("url", normalized.get("homepage", ""))
+        normalized.setdefault("category", first_category(normalized.get("categories")))
+        normalized["source"] = source_name
+        return normalized
+
     defaults = defaults or {}
     title = str(
         server.get("title")
@@ -138,7 +151,13 @@ def normalize_server(
     if not tags:
         tags = ["imported"]
 
+    installations = normalize_installations(server)
+    if not installations:
+        return None
+
     normalized = {
+        "name": slug,
+        "display_name": title,
         "slug": slug,
         "title": title,
         "description": description,
@@ -150,6 +169,7 @@ def normalize_server(
         "author": str(
             server.get("author") or defaults.get("author") or source_name
         ).strip(),
+        "installations": installations,
         "source": source_name,
     }
 
@@ -158,6 +178,32 @@ def normalize_server(
             normalized[optional_field] = server[optional_field]
 
     return normalized
+
+
+def first_category(categories: object) -> str:
+    """Return the first usable CAM category or the default category."""
+    if isinstance(categories, list) and categories:
+        category = str(categories[0]).strip()
+        if category:
+            return category
+    return DEFAULT_CATEGORY
+
+
+def normalize_installations(server: dict) -> dict:
+    """Build CAM-compatible installation entries from source metadata."""
+    installations = server.get("installations")
+    if isinstance(installations, dict) and installations:
+        return installations
+
+    npm = str(server.get("npm", "")).strip()
+    if npm:
+        return {"npm": {"type": "npm", "command": "npx", "args": ["-y", npm]}}
+
+    docker = str(server.get("docker", "")).strip()
+    if docker:
+        return {"docker": {"type": "docker", "command": "docker", "args": ["run", "--rm", docker]}}
+
+    return {}
 
 
 def validate_server_file(file_path: Path, data: dict, schema: dict) -> None:
@@ -170,8 +216,9 @@ def validate_server_file(file_path: Path, data: dict, schema: dict) -> None:
             print(f"  {err.json_path}: {err.message}")
         sys.exit(1)
 
-    if data.get("slug") != file_path.stem:
-        print(f"FAIL: {file_path.name} - slug does not match filename")
+    identifier = data.get("slug") or data.get("name")
+    if data.get("slug") and identifier != file_path.stem:
+        print(f"FAIL: {file_path.name} - identifier does not match filename")
         sys.exit(1)
 
 
@@ -186,17 +233,21 @@ def load_local_source(source: dict, server_schema: dict) -> list[dict]:
         return []
 
     servers = []
-    for file_path in sorted(source_dir.glob("*.yaml")):
+    local_files = sorted(source_dir.rglob("*.yaml")) + sorted(source_dir.rglob("*.json"))
+    for file_path in local_files:
         with open(file_path, encoding="utf-8") as f:
-            data = yaml.safe_load(f)
+            if file_path.suffix == ".json":
+                data = json.load(f)
+            else:
+                data = yaml.safe_load(f)
         if data is None:
             print(f"FAIL: {file_path.name} is empty")
             sys.exit(1)
 
         validate_server_file(file_path, data, server_schema)
-        normalized = dict(data)
-        normalized["source"] = source_name
-        servers.append(normalized)
+        normalized = normalize_server(data, source_name)
+        if normalized:
+            servers.append(normalized)
 
     return servers
 
@@ -367,7 +418,7 @@ def save_scraped_servers(source_name: str, servers: list[dict]) -> int:
     saved = 0
     seen_slugs = set()
     for server in servers:
-        slug = server.get("slug", "")
+        slug = server.get("slug") or server.get("name", "")
         if not slug or slug in seen_slugs:
             continue
         seen_slugs.add(slug)
@@ -445,7 +496,7 @@ def dedupe_servers(servers: list[dict]) -> list[dict]:
     deduped = []
     seen_slugs = set()
     for server in servers:
-        slug = server.get("slug")
+        slug = server.get("slug") or server.get("name")
         if not slug or slug in seen_slugs:
             continue
         seen_slugs.add(slug)

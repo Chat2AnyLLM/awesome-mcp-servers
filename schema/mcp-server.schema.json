@@ -4,13 +4,22 @@
   "title": "MCP Server",
   "description": "Schema for a single curated MCP server entry",
   "type": "object",
-  "required": ["slug", "title", "description", "url", "tags", "category", "author"],
-  "additionalProperties": false,
+  "required": ["description"],
+  "additionalProperties": true,
   "properties": {
     "slug": {
       "type": "string",
       "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$",
       "description": "URL-safe identifier, must match the filename"
+    },
+    "name": {
+      "type": "string",
+      "description": "CAM-compatible MCP server identifier, must match the filename when slug is absent"
+    },
+    "display_name": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 100
     },
     "title": {
       "type": "string",
@@ -20,18 +29,28 @@
     "description": {
       "type": "string",
       "minLength": 10,
-      "maxLength": 300
+      "maxLength": 2000
     },
     "url": {
       "type": "string",
       "pattern": "^https?://",
       "description": "URL to the MCP server repository or documentation"
     },
+    "repository": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "type": { "type": "string" },
+        "url": { "type": "string" }
+      }
+    },
+    "homepage": {
+      "type": ["string", "null"]
+    },
     "tags": {
       "type": "array",
       "items": { "type": "string", "minLength": 1 },
-      "minItems": 1,
-      "uniqueItems": true
+      "minItems": 1
     },
     "category": {
       "type": "string",
@@ -51,8 +70,16 @@
       ]
     },
     "author": {
-      "type": "string",
-      "minLength": 1
+      "oneOf": [
+        { "type": "string", "minLength": 1 },
+        {
+          "type": "object",
+          "additionalProperties": true,
+          "properties": {
+            "name": { "type": "string" }
+          }
+        }
+      ]
     },
     "npm": {
       "type": "string",
@@ -65,6 +92,43 @@
     "license": {
       "type": "string",
       "description": "License identifier (e.g., MIT, Apache-2.0)"
+    },
+    "categories": {
+      "type": "array",
+      "items": { "type": "string", "minLength": 1 }
+    },
+    "installations": {
+      "type": "object",
+      "minProperties": 1,
+      "additionalProperties": {
+        "type": "object",
+        "additionalProperties": true,
+        "properties": {
+          "type": { "type": "string" },
+          "command": { "type": "string" },
+          "args": {
+            "type": "array",
+            "items": { "type": "string" }
+          },
+          "env": {
+            "type": "object",
+            "additionalProperties": { "type": "string" }
+          },
+          "url": { "type": "string" },
+          "headers": {
+            "type": "object",
+            "additionalProperties": { "type": "string" }
+          }
+        }
+      }
+    },
+    "arguments": {
+      "type": "object",
+      "additionalProperties": true
     }
-  }
+  },
+  "anyOf": [
+    { "required": ["slug", "title", "url", "tags", "category", "author"] },
+    { "required": ["name", "installations"] }
+  ]
 }
