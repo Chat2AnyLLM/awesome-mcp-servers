@@ -535,7 +535,7 @@ def write_servers_csv(servers: list[dict], output_dir: Path) -> None:
         "source",
     ]
     with open(output_path, "w", newline="", encoding="utf-8") as f:
-        writer = csv.DictWriter(f, fieldnames=fieldnames, quoting=csv.QUOTE_ALL)
+        writer = csv.DictWriter(f, fieldnames=fieldnames, quoting=csv.QUOTE_ALL, lineterminator="\n")
         writer.writeheader()
         for server in servers:
             row = {k: server.get(k, "") for k in fieldnames if k != "tags"}
