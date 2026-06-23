@@ -1,12 +1,12 @@
 {
   "name": "xquik",
   "display_name": "Xquik MCP Server",
-  "description": "Remote MCP server for authenticated X/Twitter data extraction, publishing, account, and automation workflows.",
+  "description": "Remote Streamable HTTP MCP server for authenticated X data, extraction tools, webhooks, and write workflows.",
   "repository": {
     "type": "git",
     "url": "https://github.com/Xquik-dev/x-twitter-scraper"
   },
-  "homepage": "https://github.com/Xquik-dev/x-twitter-scraper",
+  "homepage": "https://docs.xquik.com/mcp/overview",
   "author": "Xquik-dev",
   "license": "MIT",
   "categories": [
@@ -20,23 +20,19 @@
     "api"
   ],
   "installations": {
-    "npm": {
-      "type": "npm",
-      "command": "npx",
-      "args": [
-        "-y",
-        "skills@1.5.3",
-        "add",
-        "Xquik-dev/x-twitter-scraper"
-      ],
-      "env": {
-        "XQUIK_API_KEY": "${XQUIK_API_KEY}"
-      }
+    "http": {
+      "type": "http",
+      "url": "https://xquik.com/mcp",
+      "description": "Connect directly to the hosted Streamable HTTP MCP server.",
+      "headers": {
+        "Authorization": "Bearer ${XQUIK_API_KEY}"
+      },
+      "recommended": true
     }
   },
   "arguments": {
     "XQUIK_API_KEY": {
-      "description": "Your Xquik API key for authenticated X/Twitter data access.",
+      "description": "Your Xquik API key.",
       "required": true,
       "example": "${XQUIK_API_KEY}"
     }
