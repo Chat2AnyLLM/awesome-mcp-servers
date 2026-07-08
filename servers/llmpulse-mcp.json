@@ -1,0 +1,54 @@
+{
+  "name": "llmpulse-mcp",
+  "display_name": "LLM Pulse MCP Server",
+  "description": "Exposes LLM Pulse brand visibility, citations, sentiment, share of voice, tracked prompts, recommendations, and AI traffic analytics through MCP.",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/LLM-Pulse/llmpulse-mcp"
+  },
+  "homepage": "https://llmpulse.ai/features/mcp",
+  "author": {
+    "name": "LLM Pulse"
+  },
+  "license": "MIT",
+  "category": "data",
+  "categories": [
+    "Analytics",
+    "Marketing"
+  ],
+  "tags": [
+    "analytics",
+    "ai-visibility",
+    "brand-monitoring",
+    "citations",
+    "sentiment",
+    "share-of-voice",
+    "streamable-http"
+  ],
+  "installations": {
+    "streamable-http": {
+      "type": "streamable-http",
+      "url": "https://api.llmpulse.ai/api/v1/mcp",
+      "headers": {
+        "Authorization": "Bearer ${LLMPULSE_API_KEY}"
+      }
+    },
+    "local-wrapper": {
+      "type": "stdio",
+      "command": "node",
+      "args": [
+        "src/index.js"
+      ],
+      "env": {
+        "LLMPULSE_API_KEY": "${LLMPULSE_API_KEY}"
+      }
+    }
+  },
+  "arguments": {
+    "LLMPULSE_API_KEY": {
+      "description": "LLM Pulse API key used to proxy authenticated calls to the hosted MCP endpoint.",
+      "required": true,
+      "example": "llmpulse_your_key_here"
+    }
+  }
+}
