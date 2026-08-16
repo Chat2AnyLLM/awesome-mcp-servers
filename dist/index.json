@@ -1,8 +1,8 @@
 {
   "version": "1.0.0",
-  "generated_at": "2026-08-16T13:23:50Z",
+  "generated_at": "2026-08-16T13:27:42Z",
   "servers": {
-    "count": 383,
+    "count": 384,
     "file": "servers.json"
   },
   "sources": {
