@@ -1,0 +1,38 @@
+{
+  "display_name": "Agent QA",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/vostride/agent-qa"
+  },
+  "homepage": "https://github.com/vostride/agent-qa",
+  "author": {
+    "name": "Vostride"
+  },
+  "license": "FSL-1.1-ALv2",
+  "tags": [
+    "qa",
+    "testing",
+    "browser automation",
+    "mobile testing",
+    "test memory"
+  ],
+  "installations": {
+    "npm": {
+      "type": "npm",
+      "command": "npx",
+      "args": [
+        "-y",
+        "agent-qa",
+        "mcp"
+      ]
+    }
+  },
+  "name": "agent-qa",
+  "description": "Local MCP server for authoring, validating, running, and inspecting natural-language web and mobile regression tests with persistent test memory and self-healing flows.",
+  "categories": [
+    "Dev Tools",
+    "Browser Automation"
+  ],
+  "is_official": true,
+  "is_archived": false
+}
