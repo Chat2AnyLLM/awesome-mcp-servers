@@ -160,8 +160,8 @@ See the full list at [github.com/modelcontextprotocol/servers](https://github.co
 
 | Metric | Count |
 |--------|-------|
-| Unified servers (in `dist/servers.json`) | 383 |
-| Direct servers (from `servers/`) | 383 |
+| Unified servers (in `dist/servers.json`) | 384 |
+| Direct servers (from `servers/`) | 384 |
 | Configured sources | 3 |
 | Scraped servers cached in `scraped/` | 0 |
 
@@ -169,7 +169,7 @@ See the full list at [github.com/modelcontextprotocol/servers](https://github.co
 
 | Source | Type | Location | Format | Loaded |
 |--------|------|----------|--------|--------|
-| Local Servers | local | `servers/` | - | 383 |
+| Local Servers | local | `servers/` | - | 384 |
 | Punkpeye Awesome MCP Servers | github | [https://github.com/punkpeye/awesome-mcp-servers](https://github.com/punkpeye/awesome-mcp-servers) | md | 0 |
 | Official MCP Servers | github | [https://github.com/modelcontextprotocol/servers](https://github.com/modelcontextprotocol/servers) | md | 0 |
 
