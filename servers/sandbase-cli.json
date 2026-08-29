@@ -1,0 +1,59 @@
+{
+  "name": "sandbase-cli",
+  "display_name": "SandBase CLI",
+  "description": "Open-source local MCP server and CLI for discovering and running 2,000+ AI models through one API.",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sandbaseai/cli"
+  },
+  "author": {
+    "name": "sandbaseai"
+  },
+  "license": "Apache-2.0",
+  "categories": [
+    "AI/ML",
+    "Developer Tools"
+  ],
+  "tags": [
+    "model-gateway",
+    "multi-model",
+    "cli",
+    "local"
+  ],
+  "installations": {
+    "npm": {
+      "type": "npm",
+      "command": "npx",
+      "args": [
+        "-y",
+        "@sandbaseai/cli",
+        "connect"
+      ],
+      "description": "Run the local MCP bridge with npx"
+    },
+    "homebrew": {
+      "type": "homebrew",
+      "command": "brew",
+      "args": [
+        "install",
+        "sandbaseai/tap/sandbaseai-cli"
+      ],
+      "description": "Install the CLI on macOS or Linux"
+    }
+  },
+  "homepage": "https://sandbase.ai",
+  "tools": [
+    {
+      "name": "sandbase_discover",
+      "description": "Discover available models and capabilities"
+    },
+    {
+      "name": "sandbase_inspect",
+      "description": "Inspect model metadata and parameters"
+    },
+    {
+      "name": "sandbase_run",
+      "description": "Run a selected model through the gateway"
+    }
+  ]
+}

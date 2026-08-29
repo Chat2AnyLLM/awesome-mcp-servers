@@ -1,7 +1,7 @@
 {
   "version": "1.0.0",
-  "generated_at": "2026-08-28T19:50:54Z",
-  "count": 383,
+  "generated_at": "2026-08-29T01:29:16Z",
+  "count": 384,
   "servers": [
     {
       "display_name": "4EVERLAND Hosting MCP Server",
@@ -76650,6 +76650,70 @@
       "title": "Salesforce Connector",
       "url": "https://github.com/smn2gnt/MCP-Salesforce",
       "category": "Productivity",
+      "source": "Local Servers"
+    },
+    {
+      "name": "sandbase-cli",
+      "display_name": "SandBase CLI",
+      "description": "Open-source local MCP server and CLI for discovering and running 2,000+ AI models through one API.",
+      "repository": {
+        "type": "git",
+        "url": "https://github.com/sandbaseai/cli"
+      },
+      "author": {
+        "name": "sandbaseai"
+      },
+      "license": "Apache-2.0",
+      "categories": [
+        "AI/ML",
+        "Developer Tools"
+      ],
+      "tags": [
+        "model-gateway",
+        "multi-model",
+        "cli",
+        "local"
+      ],
+      "installations": {
+        "npm": {
+          "type": "npm",
+          "command": "npx",
+          "args": [
+            "-y",
+            "@sandbaseai/cli",
+            "connect"
+          ],
+          "description": "Run the local MCP bridge with npx"
+        },
+        "homebrew": {
+          "type": "homebrew",
+          "command": "brew",
+          "args": [
+            "install",
+            "sandbaseai/tap/sandbaseai-cli"
+          ],
+          "description": "Install the CLI on macOS or Linux"
+        }
+      },
+      "homepage": "https://sandbase.ai",
+      "tools": [
+        {
+          "name": "sandbase_discover",
+          "description": "Discover available models and capabilities"
+        },
+        {
+          "name": "sandbase_inspect",
+          "description": "Inspect model metadata and parameters"
+        },
+        {
+          "name": "sandbase_run",
+          "description": "Run a selected model through the gateway"
+        }
+      ],
+      "slug": "sandbase-cli",
+      "title": "SandBase CLI",
+      "url": "https://github.com/sandbaseai/cli",
+      "category": "AI/ML",
       "source": "Local Servers"
     },
     {
