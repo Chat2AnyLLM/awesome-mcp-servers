@@ -1,0 +1,16 @@
+slug: worklittle-jobs
+title: Worklittle Jobs MCP
+description: Search millions of jobs with visa, salary, and distance filters, save roles, and apply from AI clients.
+url: https://github.com/worklittle/jobs-mcp
+tags:
+  - jobs
+  - search
+  - recruiting
+  - careers
+category: data
+author: worklittle
+license: MIT
+installations:
+  remote:
+    type: http
+    url: https://mcp.worklittle.com/

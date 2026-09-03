@@ -1,7 +1,7 @@
 {
   "version": "1.0.0",
-  "generated_at": "2026-09-03T08:48:21Z",
-  "count": 385,
+  "generated_at": "2026-09-03T08:49:13Z",
+  "count": 386,
   "servers": [
     {
       "name": "process-street-mcp",
@@ -57,6 +57,30 @@
       "source": "Local Servers",
       "docker": "ghcr.io/sandbaseai/sandbase-harness-mcp:0.3.8",
       "license": "Apache-2.0"
+    },
+    {
+      "name": "worklittle-jobs",
+      "display_name": "Worklittle Jobs MCP",
+      "slug": "worklittle-jobs",
+      "title": "Worklittle Jobs MCP",
+      "description": "Search millions of jobs with visa, salary, and distance filters, save roles, and apply from AI clients.",
+      "url": "https://github.com/worklittle/jobs-mcp",
+      "tags": [
+        "jobs",
+        "search",
+        "recruiting",
+        "careers"
+      ],
+      "category": "data",
+      "author": "worklittle",
+      "installations": {
+        "remote": {
+          "type": "http",
+          "url": "https://mcp.worklittle.com/"
+        }
+      },
+      "source": "Local Servers",
+      "license": "MIT"
     },
     {
       "display_name": "4EVERLAND Hosting MCP Server",
