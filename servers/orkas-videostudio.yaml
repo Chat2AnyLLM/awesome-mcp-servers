@@ -1,0 +1,23 @@
+name: orkas-videostudio
+display_name: OrkasVideoStudio
+description: Local-first toolkit that lets coding agents compose, edit, generate, and assemble videos from editable plan.json timelines.
+repository:
+  type: git
+  url: https://github.com/Orkas-AI/Orkas-VideoStudio
+homepage: https://github.com/Orkas-AI/Orkas-VideoStudio
+author:
+  name: Orkas-AI
+license: MIT
+categories:
+  - Media Creation
+tags:
+  - video
+  - editing
+  - composition
+  - agent-skills
+installations:
+  source:
+    type: stdio
+    command: node
+    args:
+      - packages/mcp/dist/index.js

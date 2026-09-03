@@ -1,8 +1,45 @@
 {
   "version": "1.0.0",
-  "generated_at": "2026-09-03T08:50:05Z",
-  "count": 386,
+  "generated_at": "2026-09-03T08:50:53Z",
+  "count": 387,
   "servers": [
+    {
+      "name": "orkas-videostudio",
+      "display_name": "OrkasVideoStudio",
+      "description": "Local-first toolkit that lets coding agents compose, edit, generate, and assemble videos from editable plan.json timelines.",
+      "repository": {
+        "type": "git",
+        "url": "https://github.com/Orkas-AI/Orkas-VideoStudio"
+      },
+      "homepage": "https://github.com/Orkas-AI/Orkas-VideoStudio",
+      "author": {
+        "name": "Orkas-AI"
+      },
+      "license": "MIT",
+      "categories": [
+        "Media Creation"
+      ],
+      "tags": [
+        "video",
+        "editing",
+        "composition",
+        "agent-skills"
+      ],
+      "installations": {
+        "source": {
+          "type": "stdio",
+          "command": "node",
+          "args": [
+            "packages/mcp/dist/index.js"
+          ]
+        }
+      },
+      "slug": "orkas-videostudio",
+      "title": "OrkasVideoStudio",
+      "url": "https://github.com/Orkas-AI/Orkas-VideoStudio",
+      "category": "Media Creation",
+      "source": "Local Servers"
+    },
     {
       "name": "process-street-mcp",
       "display_name": "Process Street MCP Server",
