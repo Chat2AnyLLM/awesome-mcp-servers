@@ -1,7 +1,7 @@
 {
   "version": "1.0.0",
-  "generated_at": "2026-09-03T08:47:29Z",
-  "count": 384,
+  "generated_at": "2026-09-03T08:48:21Z",
+  "count": 385,
   "servers": [
     {
       "name": "process-street-mcp",
@@ -26,6 +26,37 @@
       },
       "source": "Local Servers",
       "license": "Proprietary"
+    },
+    {
+      "name": "sandbase-harness",
+      "display_name": "SandBase Harness MCP Server",
+      "slug": "sandbase-harness",
+      "title": "SandBase Harness MCP Server",
+      "description": "MCP bridge for SandBase Harness sessions, sandboxed turns, artifacts, audit, and replay.",
+      "url": "https://github.com/sandbaseai/sandbase-harness",
+      "tags": [
+        "agent-runtime",
+        "sandbox",
+        "audit",
+        "replay",
+        "self-hosted"
+      ],
+      "category": "developer-tools",
+      "author": "sandbaseai",
+      "installations": {
+        "docker": {
+          "type": "docker",
+          "command": "docker",
+          "args": [
+            "run",
+            "--rm",
+            "ghcr.io/sandbaseai/sandbase-harness-mcp:0.3.8"
+          ]
+        }
+      },
+      "source": "Local Servers",
+      "docker": "ghcr.io/sandbaseai/sandbase-harness-mcp:0.3.8",
+      "license": "Apache-2.0"
     },
     {
       "display_name": "4EVERLAND Hosting MCP Server",

@@ -1,0 +1,14 @@
+slug: sandbase-harness
+title: SandBase Harness MCP Server
+description: MCP bridge for SandBase Harness sessions, sandboxed turns, artifacts, audit, and replay.
+url: https://github.com/sandbaseai/sandbase-harness
+tags:
+  - agent-runtime
+  - sandbox
+  - audit
+  - replay
+  - self-hosted
+category: developer-tools
+author: sandbaseai
+license: Apache-2.0
+docker: ghcr.io/sandbaseai/sandbase-harness-mcp:0.3.8
