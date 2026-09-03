@@ -27,6 +27,7 @@ SCRAPED_DIR = REPO_ROOT / "scraped"
 
 VERSION = "1.0.0"
 DEFAULT_CATEGORY = "other"
+DEFAULT_GENERATED_AT = datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
 
 
 def generated_at() -> str:
@@ -35,7 +36,7 @@ def generated_at() -> str:
     if value:
         datetime.strptime(value, "%Y-%m-%dT%H:%M:%SZ")
         return value
-    return datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
+    return DEFAULT_GENERATED_AT
 
 
 def load_schema(path: Path) -> dict:

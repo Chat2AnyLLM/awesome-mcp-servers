@@ -15,6 +15,10 @@ class GeneratedAtTests(unittest.TestCase):
         with mock.patch.dict(os.environ, {"GENERATED_AT": "2026-09-03T08:00:00Z"}):
             self.assertEqual("2026-09-03T08:00:00Z", BUILD.generated_at())
 
+    def test_default_is_stable_within_build(self):
+        with mock.patch.dict(os.environ, {}, clear=True):
+            self.assertEqual(BUILD.generated_at(), BUILD.generated_at())
+
     def test_rejects_invalid_override(self):
         with mock.patch.dict(os.environ, {"GENERATED_AT": "invalid"}):
             with self.assertRaises(ValueError):
