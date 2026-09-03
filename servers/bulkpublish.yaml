@@ -1,0 +1,13 @@
+slug: bulkpublish
+title: BulkPublish MCP Server
+description: Plan, review, schedule, publish, and analyze social media content for AI agents through BulkPublish.
+url: https://github.com/azeemkafridi/bulkpublish-api
+tags:
+  - social-media
+  - publishing
+  - scheduling
+  - analytics
+  - bulkpublish
+category: communication
+author: azeemkafridi
+license: MIT
