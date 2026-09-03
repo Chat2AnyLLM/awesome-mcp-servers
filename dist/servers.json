@@ -1,8 +1,32 @@
 {
   "version": "1.0.0",
-  "generated_at": "2026-09-03T05:20:58Z",
-  "count": 383,
+  "generated_at": "2026-09-03T08:42:22Z",
+  "count": 384,
   "servers": [
+    {
+      "name": "process-street-mcp",
+      "display_name": "Process Street MCP Server",
+      "slug": "process-street-mcp",
+      "title": "Process Street MCP Server",
+      "description": "Connect AI agents to Process Street workflows, tasks, runs, data sets, and operational records.",
+      "url": "https://github.com/process-street/process-street-mcp",
+      "tags": [
+        "process-street",
+        "workflow",
+        "tasks",
+        "operations"
+      ],
+      "category": "productivity",
+      "author": "process-street",
+      "installations": {
+        "remote": {
+          "type": "http",
+          "url": "https://mcp.process.st/"
+        }
+      },
+      "source": "Local Servers",
+      "license": "Proprietary"
+    },
     {
       "display_name": "4EVERLAND Hosting MCP Server",
       "license": "MIT",

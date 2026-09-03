@@ -1,0 +1,16 @@
+slug: process-street-mcp
+title: Process Street MCP Server
+description: Connect AI agents to Process Street workflows, tasks, runs, data sets, and operational records.
+url: https://github.com/process-street/process-street-mcp
+tags:
+  - process-street
+  - workflow
+  - tasks
+  - operations
+category: productivity
+author: process-street
+license: Proprietary
+installations:
+  remote:
+    type: http
+    url: https://mcp.process.st/
