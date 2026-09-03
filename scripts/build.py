@@ -4,6 +4,7 @@
 import csv
 import io
 import json
+import os
 import re
 import sys
 from datetime import datetime, timezone
@@ -26,6 +27,15 @@ SCRAPED_DIR = REPO_ROOT / "scraped"
 
 VERSION = "1.0.0"
 DEFAULT_CATEGORY = "other"
+
+
+def generated_at() -> str:
+    """Return a reproducible build timestamp when GENERATED_AT is set."""
+    value = os.environ.get("GENERATED_AT")
+    if value:
+        datetime.strptime(value, "%Y-%m-%dT%H:%M:%SZ")
+        return value
+    return datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
 
 
 def load_schema(path: Path) -> dict:
@@ -508,7 +518,7 @@ def write_servers_json(servers: list[dict], output_dir: Path) -> None:
     """Write unified dist/servers.json."""
     output = {
         "version": VERSION,
-        "generated_at": datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
+        "generated_at": generated_at(),
         "count": len(servers),
         "servers": servers,
     }
@@ -548,7 +558,7 @@ def write_sources_json(sources: list[dict], output_dir: Path) -> None:
     """Write dist/sources.json."""
     output = {
         "version": VERSION,
-        "generated_at": datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
+        "generated_at": generated_at(),
         "count": len(sources),
         "sources": sources,
     }
@@ -564,7 +574,7 @@ def write_index_json(servers: list[dict], sources: list[dict], output_dir: Path)
     """Write dist/index.json — a single entry point for consumers."""
     output = {
         "version": VERSION,
-        "generated_at": datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
+        "generated_at": generated_at(),
         "servers": {
             "count": len(servers),
             "file": "servers.json",

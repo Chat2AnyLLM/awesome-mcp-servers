@@ -23,7 +23,13 @@ jobs:
       - name: Validate servers
         run: make validate
 
+      - name: Read committed generation timestamp
+        id: generated-at
+        run: echo "value=$(python -c 'import json; print(json.load(open("dist/index.json"))["generated_at"])')" >> "$GITHUB_OUTPUT"
+
       - name: Build generated files
+        env:
+          GENERATED_AT: ${{ steps.generated-at.outputs.value }}
         run: make build
 
       - name: Check generated files are up to date
