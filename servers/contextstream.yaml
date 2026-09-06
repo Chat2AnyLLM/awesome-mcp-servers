@@ -1,0 +1,12 @@
+slug: contextstream
+title: ContextStream
+description: Shared project context MCP for Cursor, Claude Code, Codex, Grok, and other AI coding tools — one query, same context across tools.
+url: https://github.com/contextstream/mcp-server
+tags:
+  - context
+  - developer-tools
+  - coding-agents
+  - remote-mcp
+category: developer-tools
+author: contextstream
+license: MIT
