@@ -1,7 +1,7 @@
 {
   "version": "1.0.0",
-  "generated_at": "2026-09-08T07:33:28Z",
-  "count": 388,
+  "generated_at": "2026-09-08T09:53:22Z",
+  "count": 389,
   "servers": [
     {
       "name": "orkas-videostudio",
@@ -91749,6 +91749,58 @@
       "title": "Vega-Lite Data Visualization",
       "url": "https://github.com/isaacwasserman/mcp-vegalite-server",
       "category": "Media Creation",
+      "source": "Local Servers"
+    },
+    {
+      "name": "veriton-html-json-mcp",
+      "display_name": "Veriton HTML→JSON (x402)",
+      "description": "Remote MCP for metered HTML→structured JSON extraction for agents. Free demo tools plus Base USDC x402 paid routes ($0.02 html-to-json, $0.05 fetch-to-json). Facilitator settle via xpay.sh.",
+      "repository": {
+        "type": "git",
+        "url": "https://github.com/veriton-dev/veriton-micro-dev"
+      },
+      "homepage": "https://veriton-html-json-api.netlify.app",
+      "author": {
+        "name": "veriton-dev"
+      },
+      "license": "MIT",
+      "categories": [
+        "Data",
+        "Web",
+        "Dev Tools"
+      ],
+      "tags": [
+        "html",
+        "json",
+        "extraction",
+        "x402",
+        "usdc",
+        "base",
+        "remote",
+        "mcp",
+        "agents"
+      ],
+      "installations": {
+        "http": {
+          "type": "http",
+          "url": "https://veriton-html-json-api.netlify.app/mcp",
+          "description": "Connect to the hosted Streamable HTTP MCP endpoint (demo free; paid tools via x402).",
+          "recommended": true
+        }
+      },
+      "examples": [
+        {
+          "title": "Extract structure from HTML",
+          "description": "Parse a page into title/headings/links/text",
+          "prompt": "Use veriton html-to-json tools to extract structured JSON from this HTML snippet"
+        }
+      ],
+      "is_official": false,
+      "is_archived": false,
+      "slug": "veriton-html-json-mcp",
+      "title": "Veriton HTML→JSON (x402)",
+      "url": "https://github.com/veriton-dev/veriton-micro-dev",
+      "category": "Data",
       "source": "Local Servers"
     },
     {
