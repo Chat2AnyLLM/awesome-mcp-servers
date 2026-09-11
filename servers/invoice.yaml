@@ -1,0 +1,17 @@
+slug: invoice
+title: Invoice MCP Server
+description: Make real, sendable PDF invoices from a sentence. Clients, numbering that never repeats, VAT lines, discounts and overdue reports, all stored locally. The hosted endpoint needs a free token minted at https://mcp.zovo.one/mcp/connect; use it in the URL path form shown by that page.
+url: https://github.com/theluckystrike/mcp-invoice
+tags:
+  - invoicing
+  - pdf
+  - billing
+  - freelancer
+  - local-first
+category: productivity
+author: theluckystrike
+license: MIT
+installations:
+  remote:
+    type: http
+    url: https://mcp.zovo.one/mcp/invoice/t/<token>
