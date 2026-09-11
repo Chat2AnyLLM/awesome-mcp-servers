@@ -1,0 +1,17 @@
+slug: expense-tracker
+title: Expense Tracker MCP Server
+description: Local expenses, receipts and mileage ledger for freelancers. Categorise, split VAT, summarise, export to CSV or xlsx and rebill straight into an invoice. The hosted endpoint needs a free token minted at https://mcp.zovo.one/mcp/connect; use it in the URL path form shown by that page.
+url: https://github.com/theluckystrike/mcp-expense-tracker
+tags:
+  - expenses
+  - receipts
+  - mileage
+  - vat
+  - local-first
+category: productivity
+author: theluckystrike
+license: MIT
+installations:
+  remote:
+    type: http
+    url: https://mcp.zovo.one/mcp/expense-tracker/t/<token>

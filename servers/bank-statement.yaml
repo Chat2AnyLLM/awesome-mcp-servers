@@ -1,0 +1,17 @@
+slug: bank-statement
+title: Bank Statement MCP Server
+description: Import a bank CSV export, categorise it, summarise it per currency, find recurring charges and reconcile it against your expense ledger. Everything stays on your machine. The hosted endpoint needs a free token minted at https://mcp.zovo.one/mcp/connect; use it in the URL path form shown by that page.
+url: https://github.com/theluckystrike/mcp-bank-statement
+tags:
+  - banking
+  - csv
+  - reconciliation
+  - expenses
+  - local-first
+category: productivity
+author: theluckystrike
+license: MIT
+installations:
+  remote:
+    type: http
+    url: https://mcp.zovo.one/mcp/bank-statement/t/<token>

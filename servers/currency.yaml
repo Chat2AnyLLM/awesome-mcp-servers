@@ -1,0 +1,17 @@
+slug: currency
+title: Currency MCP Server
+description: Live and historical exchange rates from the European Central Bank, in your AI chat. Convert amounts, read rate history, and hand invoice tools the FX rates they need. No API key for the rates, cached locally, works offline. The hosted endpoint needs a free token minted at https://mcp.zovo.one/mcp/connect; use it in the URL path form shown by that page.
+url: https://github.com/theluckystrike/mcp-currency
+tags:
+  - currency
+  - exchange-rates
+  - ecb
+  - conversion
+  - finance
+category: productivity
+author: theluckystrike
+license: MIT
+installations:
+  remote:
+    type: http
+    url: https://mcp.zovo.one/mcp/currency/t/<token>

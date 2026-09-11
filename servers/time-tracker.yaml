@@ -1,0 +1,17 @@
+slug: time-tracker
+title: Time Tracker MCP Server
+description: Track billable time without leaving your AI chat. Timers, entries, reports, CSV export and invoice line items, all stored locally. The hosted endpoint needs a free token minted at https://mcp.zovo.one/mcp/connect; use it in the URL path form shown by that page.
+url: https://github.com/theluckystrike/mcp-time-tracker
+tags:
+  - time-tracking
+  - billing
+  - freelancer
+  - reports
+  - local-first
+category: productivity
+author: theluckystrike
+license: MIT
+installations:
+  remote:
+    type: http
+    url: https://mcp.zovo.one/mcp/time-tracker/t/<token>

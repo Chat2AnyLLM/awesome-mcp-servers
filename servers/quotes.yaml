@@ -1,0 +1,17 @@
+slug: quotes
+title: Quotes MCP Server
+description: Send a client a real quote in seconds. Line items with VAT, a validity date, a plain-text version to paste into email and an A4 PDF. Accepting a quote turns it into an invoice with the same numbers. All local. The hosted endpoint needs a free token minted at https://mcp.zovo.one/mcp/connect; use it in the URL path form shown by that page.
+url: https://github.com/theluckystrike/mcp-quotes
+tags:
+  - quotes
+  - estimates
+  - invoicing
+  - pdf
+  - local-first
+category: productivity
+author: theluckystrike
+license: MIT
+installations:
+  remote:
+    type: http
+    url: https://mcp.zovo.one/mcp/quotes/t/<token>

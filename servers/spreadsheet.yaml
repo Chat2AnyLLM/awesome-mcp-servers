@@ -1,0 +1,17 @@
+slug: spreadsheet
+title: Spreadsheet MCP Server
+description: Open, inspect, query, edit and convert xlsx and csv files locally from your AI assistant. The hosted endpoint needs a free token minted at https://mcp.zovo.one/mcp/connect; use it in the URL path form shown by that page.
+url: https://github.com/theluckystrike/mcp-spreadsheet
+tags:
+  - spreadsheet
+  - xlsx
+  - csv
+  - data
+  - local-first
+category: productivity
+author: theluckystrike
+license: MIT
+installations:
+  remote:
+    type: http
+    url: https://mcp.zovo.one/mcp/spreadsheet/t/<token>

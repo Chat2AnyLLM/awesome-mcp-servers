@@ -1,0 +1,16 @@
+slug: pdf
+title: PDF MCP Server
+description: Merge, split, extract, rotate, reorder and stamp PDF files from chat. Mark an invoice PAID, pull pages out of a scan, join a set of documents into one. Everything stays on your machine. The hosted endpoint needs a free token minted at https://mcp.zovo.one/mcp/connect; use it in the URL path form shown by that page.
+url: https://github.com/theluckystrike/mcp-pdf
+tags:
+  - pdf
+  - documents
+  - files
+  - local-first
+category: productivity
+author: theluckystrike
+license: MIT
+installations:
+  remote:
+    type: http
+    url: https://mcp.zovo.one/mcp/pdf/t/<token>

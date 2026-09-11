@@ -1,8 +1,108 @@
 {
   "version": "1.0.0",
-  "generated_at": "2026-09-11T17:59:56Z",
-  "count": 388,
+  "generated_at": "2026-09-11T18:16:39Z",
+  "count": 396,
   "servers": [
+    {
+      "name": "bank-statement",
+      "display_name": "Bank Statement MCP Server",
+      "slug": "bank-statement",
+      "title": "Bank Statement MCP Server",
+      "description": "Import a bank CSV export, categorise it, summarise it per currency, find recurring charges and reconcile it against your expense ledger. Everything stays on your machine. The hosted endpoint needs a free token minted at https://mcp.zovo.one/mcp/connect; use it in the URL path form shown by that page.",
+      "url": "https://github.com/theluckystrike/mcp-bank-statement",
+      "tags": [
+        "banking",
+        "csv",
+        "reconciliation",
+        "expenses",
+        "local-first"
+      ],
+      "category": "productivity",
+      "author": "theluckystrike",
+      "installations": {
+        "remote": {
+          "type": "http",
+          "url": "https://mcp.zovo.one/mcp/bank-statement/t/<token>"
+        }
+      },
+      "source": "Local Servers",
+      "license": "MIT"
+    },
+    {
+      "name": "currency",
+      "display_name": "Currency MCP Server",
+      "slug": "currency",
+      "title": "Currency MCP Server",
+      "description": "Live and historical exchange rates from the European Central Bank, in your AI chat. Convert amounts, read rate history, and hand invoice tools the FX rates they need. No API key for the rates, cached locally, works offline. The hosted endpoint needs a free token minted at https://mcp.zovo.one/mcp/connect; use it in the URL path form shown by that page.",
+      "url": "https://github.com/theluckystrike/mcp-currency",
+      "tags": [
+        "currency",
+        "exchange-rates",
+        "ecb",
+        "conversion",
+        "finance"
+      ],
+      "category": "productivity",
+      "author": "theluckystrike",
+      "installations": {
+        "remote": {
+          "type": "http",
+          "url": "https://mcp.zovo.one/mcp/currency/t/<token>"
+        }
+      },
+      "source": "Local Servers",
+      "license": "MIT"
+    },
+    {
+      "name": "expense-tracker",
+      "display_name": "Expense Tracker MCP Server",
+      "slug": "expense-tracker",
+      "title": "Expense Tracker MCP Server",
+      "description": "Local expenses, receipts and mileage ledger for freelancers. Categorise, split VAT, summarise, export to CSV or xlsx and rebill straight into an invoice. The hosted endpoint needs a free token minted at https://mcp.zovo.one/mcp/connect; use it in the URL path form shown by that page.",
+      "url": "https://github.com/theluckystrike/mcp-expense-tracker",
+      "tags": [
+        "expenses",
+        "receipts",
+        "mileage",
+        "vat",
+        "local-first"
+      ],
+      "category": "productivity",
+      "author": "theluckystrike",
+      "installations": {
+        "remote": {
+          "type": "http",
+          "url": "https://mcp.zovo.one/mcp/expense-tracker/t/<token>"
+        }
+      },
+      "source": "Local Servers",
+      "license": "MIT"
+    },
+    {
+      "name": "invoice",
+      "display_name": "Invoice MCP Server",
+      "slug": "invoice",
+      "title": "Invoice MCP Server",
+      "description": "Make real, sendable PDF invoices from a sentence. Clients, numbering that never repeats, VAT lines, discounts and overdue reports, all stored locally. The hosted endpoint needs a free token minted at https://mcp.zovo.one/mcp/connect; use it in the URL path form shown by that page.",
+      "url": "https://github.com/theluckystrike/mcp-invoice",
+      "tags": [
+        "invoicing",
+        "pdf",
+        "billing",
+        "freelancer",
+        "local-first"
+      ],
+      "category": "productivity",
+      "author": "theluckystrike",
+      "installations": {
+        "remote": {
+          "type": "http",
+          "url": "https://mcp.zovo.one/mcp/invoice/t/<token>"
+        }
+      },
+      "source": "Local Servers",
+      "license": "MIT"
+    },
     {
       "name": "orkas-videostudio",
       "display_name": "OrkasVideoStudio",
@@ -41,6 +141,30 @@
       "source": "Local Servers"
     },
     {
+      "name": "pdf",
+      "display_name": "PDF MCP Server",
+      "slug": "pdf",
+      "title": "PDF MCP Server",
+      "description": "Merge, split, extract, rotate, reorder and stamp PDF files from chat. Mark an invoice PAID, pull pages out of a scan, join a set of documents into one. Everything stays on your machine. The hosted endpoint needs a free token minted at https://mcp.zovo.one/mcp/connect; use it in the URL path form shown by that page.",
+      "url": "https://github.com/theluckystrike/mcp-pdf",
+      "tags": [
+        "pdf",
+        "documents",
+        "files",
+        "local-first"
+      ],
+      "category": "productivity",
+      "author": "theluckystrike",
+      "installations": {
+        "remote": {
+          "type": "http",
+          "url": "https://mcp.zovo.one/mcp/pdf/t/<token>"
+        }
+      },
+      "source": "Local Servers",
+      "license": "MIT"
+    },
+    {
       "name": "process-street-mcp",
       "display_name": "Process Street MCP Server",
       "slug": "process-street-mcp",
@@ -63,6 +187,31 @@
       },
       "source": "Local Servers",
       "license": "Proprietary"
+    },
+    {
+      "name": "quotes",
+      "display_name": "Quotes MCP Server",
+      "slug": "quotes",
+      "title": "Quotes MCP Server",
+      "description": "Send a client a real quote in seconds. Line items with VAT, a validity date, a plain-text version to paste into email and an A4 PDF. Accepting a quote turns it into an invoice with the same numbers. All local. The hosted endpoint needs a free token minted at https://mcp.zovo.one/mcp/connect; use it in the URL path form shown by that page.",
+      "url": "https://github.com/theluckystrike/mcp-quotes",
+      "tags": [
+        "quotes",
+        "estimates",
+        "invoicing",
+        "pdf",
+        "local-first"
+      ],
+      "category": "productivity",
+      "author": "theluckystrike",
+      "installations": {
+        "remote": {
+          "type": "http",
+          "url": "https://mcp.zovo.one/mcp/quotes/t/<token>"
+        }
+      },
+      "source": "Local Servers",
+      "license": "MIT"
     },
     {
       "name": "sandbase-harness",
@@ -94,6 +243,56 @@
       "source": "Local Servers",
       "docker": "ghcr.io/sandbaseai/sandbase-harness-mcp:0.3.8",
       "license": "Apache-2.0"
+    },
+    {
+      "name": "spreadsheet",
+      "display_name": "Spreadsheet MCP Server",
+      "slug": "spreadsheet",
+      "title": "Spreadsheet MCP Server",
+      "description": "Open, inspect, query, edit and convert xlsx and csv files locally from your AI assistant. The hosted endpoint needs a free token minted at https://mcp.zovo.one/mcp/connect; use it in the URL path form shown by that page.",
+      "url": "https://github.com/theluckystrike/mcp-spreadsheet",
+      "tags": [
+        "spreadsheet",
+        "xlsx",
+        "csv",
+        "data",
+        "local-first"
+      ],
+      "category": "productivity",
+      "author": "theluckystrike",
+      "installations": {
+        "remote": {
+          "type": "http",
+          "url": "https://mcp.zovo.one/mcp/spreadsheet/t/<token>"
+        }
+      },
+      "source": "Local Servers",
+      "license": "MIT"
+    },
+    {
+      "name": "time-tracker",
+      "display_name": "Time Tracker MCP Server",
+      "slug": "time-tracker",
+      "title": "Time Tracker MCP Server",
+      "description": "Track billable time without leaving your AI chat. Timers, entries, reports, CSV export and invoice line items, all stored locally. The hosted endpoint needs a free token minted at https://mcp.zovo.one/mcp/connect; use it in the URL path form shown by that page.",
+      "url": "https://github.com/theluckystrike/mcp-time-tracker",
+      "tags": [
+        "time-tracking",
+        "billing",
+        "freelancer",
+        "reports",
+        "local-first"
+      ],
+      "category": "productivity",
+      "author": "theluckystrike",
+      "installations": {
+        "remote": {
+          "type": "http",
+          "url": "https://mcp.zovo.one/mcp/time-tracker/t/<token>"
+        }
+      },
+      "source": "Local Servers",
+      "license": "MIT"
     },
     {
       "name": "worklittle-jobs",
