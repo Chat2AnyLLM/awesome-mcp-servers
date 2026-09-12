@@ -1,0 +1,12 @@
+slug: neither
+title: Neither
+description: Local stdio MCP for Cursor and Claude Desktop: selected notes/docs, related retrieval with source evidence.
+url: https://github.com/stonianua/neither-mcp
+tags:
+  - memory
+  - context
+  - knowledge
+  - cursor
+category: ai-ml
+author: stonianua
+license: MIT
