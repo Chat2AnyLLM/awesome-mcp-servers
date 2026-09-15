@@ -1,0 +1,36 @@
+{
+  "name": "statsnet",
+  "display_name": "Statsnet",
+  "description": "Company data for Kazakhstan, Uzbekistan and Kyrgyzstan: registration, executives and finances via a remote streamable-HTTP MCP endpoint.",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/usenetstate/statsnet-mcp"
+  },
+  "homepage": "https://statsnet.co",
+  "author": {
+    "name": "Statsnet"
+  },
+  "license": "MIT",
+  "categories": [
+    "data"
+  ],
+  "tags": [
+    "company-data",
+    "business",
+    "finance",
+    "kazakhstan",
+    "uzbekistan",
+    "kyrgyzstan",
+    "remote"
+  ],
+  "installations": {
+    "http": {
+      "type": "http",
+      "url": "https://statsnet.co/mcp",
+      "description": "Connect to the hosted Statsnet MCP endpoint (streamable HTTP).",
+      "recommended": true
+    }
+  },
+  "is_official": true,
+  "is_archived": false
+}
