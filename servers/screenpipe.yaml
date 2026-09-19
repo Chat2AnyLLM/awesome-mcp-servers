@@ -1,0 +1,22 @@
+slug: screenpipe
+title: Screenpipe MCP
+description: Search locally captured screen text and audio transcripts for recall, meeting notes, and work summaries. Requires a running Screenpipe recorder and its local API key; desktop Settings > Connections is the recommended setup. Configured cloud AI, transcription, sync, and integrations can transmit context off-device. Source-available under the Screenpipe Commercial License.
+url: https://github.com/screenpipe/screenpipe/tree/main/packages/screenpipe-mcp
+tags:
+  - memory
+  - screen-history
+  - audio-transcripts
+  - local
+category: productivity
+author: screenpipe
+npm: screenpipe-mcp
+license: Screenpipe Commercial License
+installations:
+  npm:
+    type: npm
+    command: npx
+    args:
+      - -y
+      - screenpipe-mcp@latest
+    env:
+      SCREENPIPE_LOCAL_API_KEY: YOUR_SCREENPIPE_LOCAL_API_KEY
