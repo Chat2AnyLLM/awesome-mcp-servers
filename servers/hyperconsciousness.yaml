@@ -1,0 +1,24 @@
+slug: hyperconsciousness
+title: Hyperconsciousness
+description: Developer-alpha Rust knowledge store with encrypted, append-only records, device sync, and MCP retrieval through scoped, expiring grants. Requires source installation and grant setup.
+url: https://github.com/louis030195/hyperconsciousness
+tags:
+  - memory
+  - encrypted-storage
+  - rust
+category: productivity
+author: louis030195
+license: MIT
+# Build hc from source and initialize an isolated store, then create a grant:
+# https://github.com/louis030195/hyperconsciousness#give-an-agent-limited-access
+# Replace both absolute paths and <grant-id> before connecting an MCP client.
+installations:
+  manual:
+    type: stdio
+    command: /absolute/path/to/hc
+    args:
+      - mcp
+      - --as
+      - <grant-id>
+      - --dir
+      - /absolute/path/to/hc-demo
