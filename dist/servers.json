@@ -1,8 +1,38 @@
 {
   "version": "1.0.0",
-  "generated_at": "2026-09-25T22:57:15Z",
-  "count": 388,
+  "generated_at": "2026-09-25T23:18:49Z",
+  "count": 389,
   "servers": [
+    {
+      "name": "hyperconsciousness",
+      "display_name": "Hyperconsciousness",
+      "slug": "hyperconsciousness",
+      "title": "Hyperconsciousness",
+      "description": "Developer-alpha Rust knowledge store with encrypted, append-only records, device sync, and MCP retrieval through scoped, expiring grants. Requires source installation and grant setup.",
+      "url": "https://github.com/louis030195/hyperconsciousness",
+      "tags": [
+        "memory",
+        "encrypted-storage",
+        "rust"
+      ],
+      "category": "productivity",
+      "author": "louis030195",
+      "installations": {
+        "manual": {
+          "type": "stdio",
+          "command": "/absolute/path/to/hc",
+          "args": [
+            "mcp",
+            "--as",
+            "<grant-id>",
+            "--dir",
+            "/absolute/path/to/hc-demo"
+          ]
+        }
+      },
+      "source": "Local Servers",
+      "license": "MIT"
+    },
     {
       "name": "orkas-videostudio",
       "display_name": "OrkasVideoStudio",
