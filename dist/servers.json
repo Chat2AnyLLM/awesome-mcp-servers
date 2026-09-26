@@ -1,8 +1,32 @@
 {
   "version": "1.0.0",
-  "generated_at": "2026-09-26T11:57:16Z",
-  "count": 388,
+  "generated_at": "2026-09-26T13:08:09Z",
+  "count": 389,
   "servers": [
+    {
+      "name": "api-market-gateway",
+      "display_name": "API.market MCP Gateway",
+      "slug": "api-market-gateway",
+      "title": "API.market MCP Gateway",
+      "description": "Proprietary hosted Streamable HTTP gateway with five tools for API discovery, operation schemas, API calls, usage and subscription management. Requires an API.market account and OAuth (recommended) or an API key. Free tiers, paid plans and limits vary by API; calls and subscription changes may incur charges. The linked public repository contains client configuration and documentation, not the hosted server implementation.",
+      "url": "https://github.com/Noveum/api-market-agent-integrations",
+      "tags": [
+        "api",
+        "gateway",
+        "hosted",
+        "oauth"
+      ],
+      "category": "developer-tools",
+      "author": "Noveum",
+      "installations": {
+        "remote": {
+          "type": "http",
+          "url": "https://api.market/api/mcp/gateway"
+        }
+      },
+      "source": "Local Servers",
+      "license": "Proprietary"
+    },
     {
       "name": "orkas-videostudio",
       "display_name": "OrkasVideoStudio",

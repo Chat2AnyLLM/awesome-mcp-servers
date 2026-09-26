@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "generated_at": "2026-09-26T11:57:16Z",
+  "generated_at": "2026-09-26T13:08:09Z",
   "count": 3,
   "sources": [
     {
@@ -8,7 +8,7 @@
       "type": "local",
       "path": "servers/",
       "description": "Hand-curated MCP server entries maintained in this repo",
-      "count": 388
+      "count": 389
     },
     {
       "name": "Punkpeye Awesome MCP Servers",
