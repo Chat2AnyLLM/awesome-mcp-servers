@@ -1,0 +1,16 @@
+slug: firstsales-mcp
+title: FirstSales MCP
+description: Connect AI agents to FirstSales CRM contacts, companies, deals, lists, and workflows, and create contacts in approved workspaces. Requires an eligible paid FirstSales account and workspace-scoped OAuth with PKCE. Hosted proprietary service.
+url: https://developer.firstsales.io/agents/mcp-server
+tags:
+  - crm
+  - contacts
+  - sales
+  - oauth
+category: productivity
+author: firstsalesio
+license: Proprietary
+installations:
+  remote:
+    type: http
+    url: https://api.app.firstsales.io/mcp

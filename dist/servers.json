@@ -1,8 +1,32 @@
 {
   "version": "1.0.0",
-  "generated_at": "2026-10-02T06:27:01Z",
-  "count": 388,
+  "generated_at": "2026-10-02T08:02:57Z",
+  "count": 389,
   "servers": [
+    {
+      "name": "firstsales-mcp",
+      "display_name": "FirstSales MCP",
+      "slug": "firstsales-mcp",
+      "title": "FirstSales MCP",
+      "description": "Connect AI agents to FirstSales CRM contacts, companies, deals, lists, and workflows, and create contacts in approved workspaces. Requires an eligible paid FirstSales account and workspace-scoped OAuth with PKCE. Hosted proprietary service.",
+      "url": "https://developer.firstsales.io/agents/mcp-server",
+      "tags": [
+        "crm",
+        "contacts",
+        "sales",
+        "oauth"
+      ],
+      "category": "productivity",
+      "author": "firstsalesio",
+      "installations": {
+        "remote": {
+          "type": "http",
+          "url": "https://api.app.firstsales.io/mcp"
+        }
+      },
+      "source": "Local Servers",
+      "license": "Proprietary"
+    },
     {
       "name": "orkas-videostudio",
       "display_name": "OrkasVideoStudio",
