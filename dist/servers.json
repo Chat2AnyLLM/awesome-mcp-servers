@@ -1,8 +1,33 @@
 {
   "version": "1.0.0",
-  "generated_at": "2026-10-03T01:33:43Z",
-  "count": 389,
+  "generated_at": "2026-10-03T05:47:13Z",
+  "count": 390,
   "servers": [
+    {
+      "name": "aident-loadout",
+      "display_name": "Aident Loadout",
+      "slug": "aident-loadout",
+      "title": "Aident Loadout",
+      "description": "Connect Codex, Claude Code, Cursor, ChatGPT and other MCP clients to 1,000+ apps and 400+ expert-built Skills through one reusable setup with Vault and Audit.",
+      "url": "https://github.com/Aident-AI/aident-skill",
+      "tags": [
+        "mcp",
+        "integrations",
+        "agents",
+        "skills",
+        "oauth"
+      ],
+      "category": "productivity",
+      "author": "Aident-AI",
+      "installations": {
+        "remote": {
+          "type": "http",
+          "url": "https://loadout.aident.ai/mcp"
+        }
+      },
+      "source": "Local Servers",
+      "license": "MIT"
+    },
     {
       "name": "firstsales-mcp",
       "display_name": "FirstSales MCP",
