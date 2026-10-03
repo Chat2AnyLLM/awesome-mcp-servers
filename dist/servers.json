@@ -1,7 +1,7 @@
 {
   "version": "1.0.0",
-  "generated_at": "2026-10-03T12:51:40Z",
-  "count": 389,
+  "generated_at": "2026-10-03T14:26:41Z",
+  "count": 390,
   "servers": [
     {
       "name": "firstsales-mcp",
@@ -22,6 +22,30 @@
         "remote": {
           "type": "http",
           "url": "https://api.app.firstsales.io/mcp"
+        }
+      },
+      "source": "Local Servers",
+      "license": "Proprietary"
+    },
+    {
+      "name": "lognorm",
+      "display_name": "LogNorm",
+      "slug": "lognorm",
+      "title": "LogNorm",
+      "description": "Hosted MCP server that hands your SEO/GEO growth backlog (site audits, fixes, content, AI-visibility tracking) to Claude Code, Codex and Cursor. Requires a LogNorm account (free plan available) and OAuth 2.1; hosted proprietary service, public docs/skill repo is MIT.",
+      "url": "https://lognorm.com",
+      "tags": [
+        "seo",
+        "geo",
+        "marketing",
+        "oauth"
+      ],
+      "category": "web",
+      "author": "lognorm",
+      "installations": {
+        "remote": {
+          "type": "http",
+          "url": "https://lognorm.com/api/mcp"
         }
       },
       "source": "Local Servers",

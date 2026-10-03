@@ -1,0 +1,16 @@
+slug: lognorm
+title: LogNorm
+description: Hosted MCP server that hands your SEO/GEO growth backlog (site audits, fixes, content, AI-visibility tracking) to Claude Code, Codex and Cursor. Requires a LogNorm account (free plan available) and OAuth 2.1; hosted proprietary service, public docs/skill repo is MIT.
+url: https://lognorm.com
+tags:
+  - seo
+  - geo
+  - marketing
+  - oauth
+category: web
+author: lognorm
+license: Proprietary
+installations:
+  remote:
+    type: http
+    url: https://lognorm.com/api/mcp
