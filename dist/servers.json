@@ -1,7 +1,7 @@
 {
   "version": "1.0.0",
   "generated_at": "2026-10-12T06:46:10Z",
-  "count": 389,
+  "count": 390,
   "servers": [
     {
       "name": "firstsales-mcp",
@@ -26,6 +26,47 @@
       },
       "source": "Local Servers",
       "license": "Proprietary"
+    },
+    {
+      "name": "invokely-mcp-connector",
+      "display_name": "Invokely MCP Connector",
+      "description": "Local stdio adapter that forwards MCP tool discovery and calls to Invokely's hosted statistics service. The MIT license applies to this connector; the hosted backend is not included.",
+      "repository": {
+        "type": "git",
+        "url": "https://github.com/estevecastells/invokely-mcp-connector"
+      },
+      "homepage": "https://invokely.ai/docs",
+      "author": "estevecastells",
+      "license": "MIT",
+      "categories": [
+        "data"
+      ],
+      "tags": [
+        "statistics",
+        "official-data",
+        "stdio"
+      ],
+      "installations": {
+        "github": {
+          "type": "npm",
+          "command": "npx",
+          "args": [
+            "-y",
+            "github:estevecastells/invokely-mcp-connector"
+          ]
+        }
+      },
+      "arguments": {
+        "INVOKELY_API_KEY": {
+          "description": "Optional key sent to the hosted MCP service as a bearer token. Omit it to use trial access.",
+          "required": false
+        }
+      },
+      "slug": "invokely-mcp-connector",
+      "title": "Invokely MCP Connector",
+      "url": "https://github.com/estevecastells/invokely-mcp-connector",
+      "category": "data",
+      "source": "Local Servers"
     },
     {
       "name": "orkas-videostudio",
