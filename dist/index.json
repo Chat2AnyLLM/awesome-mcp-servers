@@ -2,7 +2,7 @@
   "version": "1.0.0",
   "generated_at": "2026-10-12T06:46:10Z",
   "servers": {
-    "count": 389,
+    "count": 390,
     "file": "servers.json"
   },
   "sources": {
