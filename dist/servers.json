@@ -1,8 +1,33 @@
 {
   "version": "1.0.0",
-  "generated_at": "2026-10-13T19:39:01Z",
-  "count": 389,
+  "generated_at": "2026-10-13T20:26:37Z",
+  "count": 390,
   "servers": [
+    {
+      "name": "dc-hub",
+      "display_name": "DC Hub",
+      "slug": "dc-hub",
+      "title": "DC Hub",
+      "description": "DC Hub is the live data layer for data-center site selection. Its DCPI is a daily score of where data centers can get grid power, across 300+ markets. 94 tools; free tier needs no key.",
+      "url": "https://github.com/azmartone67/dchub-mcp-server",
+      "tags": [
+        "data-centers",
+        "energy",
+        "site-selection",
+        "remote",
+        "hosted"
+      ],
+      "category": "data",
+      "author": "azmartone67",
+      "installations": {
+        "remote": {
+          "type": "http",
+          "url": "https://dchub.cloud/mcp"
+        }
+      },
+      "source": "Local Servers",
+      "license": "MIT"
+    },
     {
       "name": "firstsales-mcp",
       "display_name": "FirstSales MCP",
