@@ -1,7 +1,7 @@
 {
   "version": "1.0.0",
-  "generated_at": "2026-10-15T01:05:42Z",
-  "count": 389,
+  "generated_at": "2026-10-15T04:25:05Z",
+  "count": 390,
   "servers": [
     {
       "name": "firstsales-mcp",
@@ -14671,6 +14671,44 @@
       "title": "Blender",
       "url": "https://github.com/ahujasid/blender-mcp",
       "category": "Media Creation",
+      "source": "Local Servers"
+    },
+    {
+      "slug": "blockvectra",
+      "name": "blockvectra",
+      "display_name": "BlockVectra MCP",
+      "description": "Hosted Streamable HTTP MCP for developers and AI agents. Documentation, chain discovery, pricing and chain-permitted public JSON-RPC are available without a key; Data API and account tools require an API key. A free plan is available with metered usage beyond its limits. The server can broadcast signed transactions through send_raw_transaction.",
+      "url": "https://github.com/blockvectra/mcp",
+      "repository": {
+        "type": "git",
+        "url": "https://github.com/blockvectra/mcp"
+      },
+      "homepage": "https://docs.blockvectra.com/mcp",
+      "tags": [
+        "blockchain",
+        "rpc",
+        "hosted",
+        "remote",
+        "agent"
+      ],
+      "category": "other",
+      "author": {
+        "name": "BlockVectra"
+      },
+      "installations": {
+        "streamable-http": {
+          "type": "streamable-http",
+          "url": "https://docs.blockvectra.com/mcp",
+          "description": "Remote endpoint; no key is needed for docs, chain discovery, pricing or permitted public RPC. Configure x-api-key for Data API and account tools."
+        }
+      },
+      "arguments": {
+        "BLOCKVECTRA_API_KEY": {
+          "description": "Optional for connecting; required for Data API and account tools, and for RPC methods outside a chain public policy.",
+          "required": false
+        }
+      },
+      "title": "BlockVectra MCP",
       "source": "Local Servers"
     },
     {
