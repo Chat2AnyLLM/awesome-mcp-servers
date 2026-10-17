@@ -1,8 +1,35 @@
 {
   "version": "1.0.0",
-  "generated_at": "2026-10-17T07:18:50Z",
-  "count": 389,
+  "generated_at": "2026-10-17T09:03:49Z",
+  "count": 390,
   "servers": [
+    {
+      "name": "curlshot",
+      "display_name": "CurlShot",
+      "slug": "curlshot",
+      "title": "CurlShot",
+      "description": "Capture screenshots of public web pages as PNG, JPEG, WebP, PDF or a scrolling video, with full-page, device presets, dark mode and CSS selector capture. Tools take_screenshot and list_devices. Free plan of 100 screenshots per month with an API key. Hosted proprietary service.",
+      "url": "https://curlshot.com/docs/guides/ai-agents",
+      "tags": [
+        "screenshot",
+        "browser",
+        "pdf",
+        "web"
+      ],
+      "category": "web",
+      "author": "SergiuPogor",
+      "installations": {
+        "remote": {
+          "type": "http",
+          "url": "https://curlshot.com/api/mcp",
+          "headers": {
+            "Authorization": "Bearer ${CURLSHOT_API_KEY}"
+          }
+        }
+      },
+      "source": "Local Servers",
+      "license": "Proprietary"
+    },
     {
       "name": "firstsales-mcp",
       "display_name": "FirstSales MCP",

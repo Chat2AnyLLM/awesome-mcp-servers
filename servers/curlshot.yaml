@@ -1,0 +1,21 @@
+slug: curlshot
+title: CurlShot
+description: Capture screenshots of public web pages as PNG, JPEG, WebP, PDF or a scrolling video, with full-page, device presets, dark mode and CSS selector capture. Tools take_screenshot and list_devices. Free plan of 100 screenshots per month with an API key. Hosted proprietary service.
+url: https://curlshot.com/docs/guides/ai-agents
+repository:
+  type: git
+  url: https://github.com/SergiuPogor/curlshot-mcp
+tags:
+  - screenshot
+  - browser
+  - pdf
+  - web
+category: web
+author: SergiuPogor
+license: Proprietary
+installations:
+  remote:
+    type: http
+    url: https://curlshot.com/api/mcp
+    headers:
+      Authorization: Bearer ${CURLSHOT_API_KEY}
