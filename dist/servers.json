@@ -1,8 +1,36 @@
 {
   "version": "1.0.0",
-  "generated_at": "2026-10-19T11:34:22Z",
-  "count": 389,
+  "generated_at": "2026-10-19T12:29:26Z",
+  "count": 390,
   "servers": [
+    {
+      "name": "agent-payment-node",
+      "display_name": "Agent Payment Node",
+      "slug": "agent-payment-node",
+      "title": "Agent Payment Node",
+      "description": "Local macOS CLI and stdio MCP payments with foreground owner approval for signing.",
+      "url": "https://github.com/nuanu-ai/agent-payment-node",
+      "tags": [
+        "payments",
+        "x402",
+        "macos"
+      ],
+      "category": "developer-tools",
+      "author": "nuanu-ai",
+      "installations": {
+        "local": {
+          "type": "stdio",
+          "command": "apn",
+          "args": [
+            "mcp",
+            "serve"
+          ],
+          "installCommand": "brew install nuanu-ai/tap/apn"
+        }
+      },
+      "source": "Local Servers",
+      "license": "MIT"
+    },
     {
       "name": "firstsales-mcp",
       "display_name": "FirstSales MCP",

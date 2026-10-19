@@ -1,0 +1,17 @@
+slug: agent-payment-node
+title: Agent Payment Node
+description: Local macOS CLI and stdio MCP payments with foreground owner approval for signing.
+url: https://github.com/nuanu-ai/agent-payment-node
+tags:
+  - payments
+  - x402
+  - macos
+category: developer-tools
+author: nuanu-ai
+license: MIT
+installations:
+  local:
+    type: stdio
+    command: apn
+    args: [mcp, serve]
+    installCommand: brew install nuanu-ai/tap/apn
