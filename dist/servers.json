@@ -1,8 +1,33 @@
 {
   "version": "1.0.0",
-  "generated_at": "2026-10-22T22:52:08Z",
-  "count": 389,
+  "generated_at": "2026-10-22T22:58:14Z",
+  "count": 390,
   "servers": [
+    {
+      "name": "equibles",
+      "display_name": "Equibles",
+      "slug": "equibles",
+      "title": "Equibles",
+      "description": "Stock market data for AI agents from https://equibles.com, including SEC filings, earnings call transcripts, financial statements, insider and congressional trades, 13F holdings, short interest, prices and options, plus portfolio and watchlist tools. Hosted service with OAuth sign-in and a free plan.",
+      "url": "https://equibles.com/docs/mcp",
+      "tags": [
+        "finance",
+        "stocks",
+        "sec-filings",
+        "earnings-calls",
+        "market-data"
+      ],
+      "category": "data",
+      "author": "daniel3303",
+      "installations": {
+        "remote": {
+          "type": "http",
+          "url": "https://mcp.equibles.com/mcp"
+        }
+      },
+      "source": "Local Servers",
+      "license": "Proprietary"
+    },
     {
       "name": "firstsales-mcp",
       "display_name": "FirstSales MCP",
