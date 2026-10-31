@@ -1,0 +1,18 @@
+slug: kilobat-cli
+title: Kilobat CLI
+description: Local stdio MCP server for macOS connection diagnostics. Some Wi-Fi data requires the separate proprietary Kilobat app and macOS permissions.
+url: https://github.com/seifip/kilobat-cli
+tags:
+  - macos
+  - network-diagnostics
+  - monitoring
+  - stdio
+category: developer-tools
+author: seifip
+license: GPL-3.0-only
+installations:
+  macos:
+    type: stdio
+    command: kilobat
+    args: [mcp]
+    description: Install first with brew install seifip/kilobat/kilobat. Requires macOS 14+ and Xcode 16+ for the source build.

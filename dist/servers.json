@@ -1,7 +1,7 @@
 {
   "version": "1.0.0",
-  "generated_at": "2026-10-31T07:44:05Z",
-  "count": 389,
+  "generated_at": "2026-10-31T08:23:05Z",
+  "count": 390,
   "servers": [
     {
       "name": "firstsales-mcp",
@@ -26,6 +26,34 @@
       },
       "source": "Local Servers",
       "license": "Proprietary"
+    },
+    {
+      "name": "kilobat-cli",
+      "display_name": "Kilobat CLI",
+      "slug": "kilobat-cli",
+      "title": "Kilobat CLI",
+      "description": "Local stdio MCP server for macOS connection diagnostics. Some Wi-Fi data requires the separate proprietary Kilobat app and macOS permissions.",
+      "url": "https://github.com/seifip/kilobat-cli",
+      "tags": [
+        "macos",
+        "network-diagnostics",
+        "monitoring",
+        "stdio"
+      ],
+      "category": "developer-tools",
+      "author": "seifip",
+      "installations": {
+        "macos": {
+          "type": "stdio",
+          "command": "kilobat",
+          "args": [
+            "mcp"
+          ],
+          "description": "Install first with brew install seifip/kilobat/kilobat. Requires macOS 14+ and Xcode 16+ for the source build."
+        }
+      },
+      "source": "Local Servers",
+      "license": "GPL-3.0-only"
     },
     {
       "name": "orkas-videostudio",
