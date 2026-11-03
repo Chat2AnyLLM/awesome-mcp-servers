@@ -1,8 +1,39 @@
 {
   "version": "1.0.0",
-  "generated_at": "2026-11-02T21:03:53Z",
-  "count": 389,
+  "generated_at": "2026-11-03T01:19:05Z",
+  "count": 390,
   "servers": [
+    {
+      "name": "etsy-sales-mcp",
+      "display_name": "Etsy Sales MCP",
+      "slug": "etsy-sales-mcp",
+      "title": "Etsy Sales MCP",
+      "description": "Etsy search results by keyword, marketplace and category plus daily sales counts and growth for any Etsy shop. Local stdio server; needs your own Apify API token.",
+      "url": "https://github.com/GeminiGeorge22/etsy-sales-mcp",
+      "tags": [
+        "etsy",
+        "ecommerce",
+        "sales",
+        "data"
+      ],
+      "category": "data",
+      "author": "GeminiGeorge22",
+      "installations": {
+        "npm": {
+          "type": "stdio",
+          "command": "npx",
+          "args": [
+            "-y",
+            "github:GeminiGeorge22/etsy-sales-mcp"
+          ],
+          "env": {
+            "APIFY_TOKEN": "${APIFY_TOKEN}"
+          }
+        }
+      },
+      "source": "Local Servers",
+      "license": "MIT"
+    },
     {
       "name": "firstsales-mcp",
       "display_name": "FirstSales MCP",

@@ -1,0 +1,21 @@
+slug: etsy-sales-mcp
+title: Etsy Sales MCP
+description: "Etsy search results by keyword, marketplace and category plus daily sales counts and growth for any Etsy shop. Local stdio server; needs your own Apify API token."
+url: https://github.com/GeminiGeorge22/etsy-sales-mcp
+tags:
+  - etsy
+  - ecommerce
+  - sales
+  - data
+category: data
+author: GeminiGeorge22
+license: MIT
+installations:
+  npm:
+    type: stdio
+    command: npx
+    args:
+      - -y
+      - github:GeminiGeorge22/etsy-sales-mcp
+    env:
+      APIFY_TOKEN: ${APIFY_TOKEN}
