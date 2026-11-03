@@ -1,8 +1,39 @@
 {
   "version": "1.0.0",
-  "generated_at": "2026-11-02T21:03:53Z",
-  "count": 389,
+  "generated_at": "2026-11-03T01:19:31Z",
+  "count": 390,
   "servers": [
+    {
+      "name": "ats-jobs-mcp",
+      "display_name": "ATS Jobs MCP",
+      "slug": "ats-jobs-mcp",
+      "title": "ATS Jobs MCP",
+      "description": "New job postings since any date or window (24h, 7d, 30d) from Ashby, Greenhouse, Lever and SmartRecruiters job boards. Local stdio server; needs your own Apify API token.",
+      "url": "https://github.com/GeminiGeorge22/ats-jobs-mcp",
+      "tags": [
+        "jobs",
+        "recruiting",
+        "ats",
+        "data"
+      ],
+      "category": "data",
+      "author": "GeminiGeorge22",
+      "installations": {
+        "npm": {
+          "type": "stdio",
+          "command": "npx",
+          "args": [
+            "-y",
+            "github:GeminiGeorge22/ats-jobs-mcp"
+          ],
+          "env": {
+            "APIFY_TOKEN": "${APIFY_TOKEN}"
+          }
+        }
+      },
+      "source": "Local Servers",
+      "license": "MIT"
+    },
     {
       "name": "firstsales-mcp",
       "display_name": "FirstSales MCP",
