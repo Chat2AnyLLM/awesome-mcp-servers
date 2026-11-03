@@ -130,6 +130,7 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for details. Two ways to contribute:
 *(No local entries yet — add one via `servers/`)*
 
 ---
+| [StatOrigin](https://statorigin.org/mcp) | Hosted statistics database for 32 industries; every figure cites its primary source. Open, no API key; docs: https://statorigin.org/docs/mcp | `database` `statistics` `research` `remote` |
 
 ## External Sources
 
