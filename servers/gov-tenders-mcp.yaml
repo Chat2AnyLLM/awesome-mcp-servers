@@ -1,0 +1,21 @@
+slug: gov-tenders-mcp
+title: Gov Tenders MCP
+description: "Public-sector tenders, grants and awards (SAM.gov, Grants.gov, USAspending, UK Find a Tender, EU TED) plus Legistar city council agendas and minutes, each with its official source link. Local stdio server; needs your own Apify API token."
+url: https://github.com/GeminiGeorge22/gov-tenders-mcp
+tags:
+  - government
+  - tenders
+  - procurement
+  - grants
+category: data
+author: GeminiGeorge22
+license: MIT
+installations:
+  npm:
+    type: stdio
+    command: npx
+    args:
+      - -y
+      - github:GeminiGeorge22/gov-tenders-mcp
+    env:
+      APIFY_TOKEN: ${APIFY_TOKEN}
