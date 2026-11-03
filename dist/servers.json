@@ -1,7 +1,7 @@
 {
   "version": "1.0.0",
-  "generated_at": "2026-11-02T21:03:53Z",
-  "count": 389,
+  "generated_at": "2026-11-03T01:19:46Z",
+  "count": 390,
   "servers": [
     {
       "name": "firstsales-mcp",
@@ -26,6 +26,37 @@
       },
       "source": "Local Servers",
       "license": "Proprietary"
+    },
+    {
+      "name": "gov-tenders-mcp",
+      "display_name": "Gov Tenders MCP",
+      "slug": "gov-tenders-mcp",
+      "title": "Gov Tenders MCP",
+      "description": "Public-sector tenders, grants and awards (SAM.gov, Grants.gov, USAspending, UK Find a Tender, EU TED) plus Legistar city council agendas and minutes, each with its official source link. Local stdio server; needs your own Apify API token.",
+      "url": "https://github.com/GeminiGeorge22/gov-tenders-mcp",
+      "tags": [
+        "government",
+        "tenders",
+        "procurement",
+        "grants"
+      ],
+      "category": "data",
+      "author": "GeminiGeorge22",
+      "installations": {
+        "npm": {
+          "type": "stdio",
+          "command": "npx",
+          "args": [
+            "-y",
+            "github:GeminiGeorge22/gov-tenders-mcp"
+          ],
+          "env": {
+            "APIFY_TOKEN": "${APIFY_TOKEN}"
+          }
+        }
+      },
+      "source": "Local Servers",
+      "license": "MIT"
     },
     {
       "name": "orkas-videostudio",
