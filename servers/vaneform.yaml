@@ -1,0 +1,17 @@
+slug: vaneform
+title: Vaneform
+description: Free website traffic checker MCP — look up monthly visits, traffic trends, source mix and top countries for any domain, plus leaderboards of growing sites and AI tools. Hosted proprietary service with a free tier; no API key required for basic lookups.
+url: https://github.com/vaneform/vaneform-mcp
+tags:
+  - analytics
+  - traffic
+  - seo
+  - websites
+  - remote
+category: data
+author: vaneform
+license: Proprietary
+installations:
+  remote:
+    type: http
+    url: https://vaneform.com/mcp

@@ -1,7 +1,7 @@
 {
   "version": "1.0.0",
-  "generated_at": "2026-11-05T07:33:16Z",
-  "count": 389,
+  "generated_at": "2026-11-05T14:04:13Z",
+  "count": 390,
   "servers": [
     {
       "name": "firstsales-mcp",
@@ -118,6 +118,31 @@
       "source": "Local Servers",
       "docker": "ghcr.io/sandbaseai/sandbase-harness-mcp:0.3.8",
       "license": "Apache-2.0"
+    },
+    {
+      "name": "vaneform",
+      "display_name": "Vaneform",
+      "slug": "vaneform",
+      "title": "Vaneform",
+      "description": "Free website traffic checker MCP — look up monthly visits, traffic trends, source mix and top countries for any domain, plus leaderboards of growing sites and AI tools. Hosted proprietary service with a free tier; no API key required for basic lookups.",
+      "url": "https://github.com/vaneform/vaneform-mcp",
+      "tags": [
+        "analytics",
+        "traffic",
+        "seo",
+        "websites",
+        "remote"
+      ],
+      "category": "data",
+      "author": "vaneform",
+      "installations": {
+        "remote": {
+          "type": "http",
+          "url": "https://vaneform.com/mcp"
+        }
+      },
+      "source": "Local Servers",
+      "license": "Proprietary"
     },
     {
       "name": "worklittle-jobs",
