@@ -1,7 +1,7 @@
 {
   "version": "1.0.0",
-  "generated_at": "2026-11-06T01:55:02Z",
-  "count": 389,
+  "generated_at": "2026-11-06T06:04:18Z",
+  "count": 390,
   "servers": [
     {
       "name": "firstsales-mcp",
@@ -22,6 +22,31 @@
         "remote": {
           "type": "http",
           "url": "https://api.app.firstsales.io/mcp"
+        }
+      },
+      "source": "Local Servers",
+      "license": "Proprietary"
+    },
+    {
+      "name": "jobspipe",
+      "display_name": "JobsPipe MCP",
+      "slug": "jobspipe",
+      "title": "JobsPipe MCP",
+      "description": "Hosted remote MCP for live job postings from 30+ ATS feeds and job boards in one normalized schema, with search filters for title, skills, location, remote, seniority and recency.",
+      "url": "https://github.com/jobspipe/mcp",
+      "tags": [
+        "jobs",
+        "search",
+        "recruiting",
+        "careers",
+        "ats"
+      ],
+      "category": "data",
+      "author": "jobspipe",
+      "installations": {
+        "remote": {
+          "type": "http",
+          "url": "https://mcp.jobspipe.dev/mcp"
         }
       },
       "source": "Local Servers",
