@@ -1,0 +1,15 @@
+slug: looot-mcp
+title: looot MCP
+description: Hosted remote MCP server for business-data lookups, covering people and company enrichment, work email find and verify, web search, page reading, news and local business search. Billed per call from a prepaid balance, no free tier. Sign in with browser OAuth or an API key.
+url: https://github.com/loootai/looot-mcp
+tags:
+  - enrichment
+  - sales
+  - search
+  - email
+category: data
+author: loootai
+installations:
+  remote:
+    type: http
+    url: https://api.looot.ai/mcp
