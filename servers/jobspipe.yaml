@@ -1,0 +1,17 @@
+slug: jobspipe
+title: JobsPipe MCP
+description: Hosted remote MCP for live job postings from 30+ ATS feeds and job boards in one normalized schema, with search filters for title, skills, location, remote, seniority and recency.
+url: https://github.com/jobspipe/mcp
+tags:
+  - jobs
+  - search
+  - recruiting
+  - careers
+  - ats
+category: data
+author: jobspipe
+license: Proprietary
+installations:
+  remote:
+    type: http
+    url: https://mcp.jobspipe.dev/mcp
