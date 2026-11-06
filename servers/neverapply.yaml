@@ -1,0 +1,16 @@
+slug: neverapply
+title: NeverApply
+description: NeverApply's hosted MCP server lets Claude, Cursor, Cline and other MCP clients search and match jobs, tailor resumes, answer screening questions, prepare for interviews, and apply to jobs with your approval. OAuth 2.1 sign-in with PKCE and dynamic client registration.
+url: https://neverapply.co/features/mcp
+tags:
+  - jobs
+  - job-search
+  - resume
+  - career
+  - oauth
+category: productivity
+author: kasovy
+installations:
+  remote:
+    type: http
+    url: https://neverapply.co/mcp
