@@ -1,0 +1,12 @@
+slug: behave
+title: behave
+description: Record how any CLI behaves as golden tests and diff a Rust or Go rewrite. Go CLI and MCP server.
+url: https://github.com/emirmrkaljevic/behave
+tags:
+  - testing
+  - cli
+  - golden-tests
+  - coreutils
+category: developer-tools
+author: emirmrkaljevic
+license: MIT
