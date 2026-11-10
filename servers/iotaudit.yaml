@@ -1,0 +1,13 @@
+slug: iotaudit
+title: iotaudit
+description: Local, consent-first audit of what your own smart home devices send over the network, with a one-page report and A-F grades. CLI and MCP server.
+url: https://github.com/emirmrkaljevic/iotaudit
+tags:
+  - iot
+  - security
+  - network
+  - home-automation
+  - cli
+category: security
+author: emirmrkaljevic
+license: MIT
