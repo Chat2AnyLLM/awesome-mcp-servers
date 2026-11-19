@@ -1,8 +1,32 @@
 {
   "version": "1.0.0",
-  "generated_at": "2026-11-19T02:19:45Z",
-  "count": 389,
+  "generated_at": "2026-11-19T08:56:57Z",
+  "count": 390,
   "servers": [
+    {
+      "name": "cheapcarent-search",
+      "display_name": "CheapCarRent Search",
+      "slug": "cheapcarent-search",
+      "title": "CheapCarRent Search",
+      "description": "Search rental cars and list pickup cities and airports across 15,000 pickup points in 46 countries and 19 languages. Remote Streamable HTTP at https://cheapcarent.com/mcp, no auth, read-only. Tools list_locations and search_cars.",
+      "url": "https://github.com/aleksandrjefimov4-crypto/cheapcarent-mcp",
+      "tags": [
+        "travel",
+        "search",
+        "rental",
+        "cars"
+      ],
+      "category": "web",
+      "author": "aleksandrjefimov4-crypto",
+      "installations": {
+        "remote": {
+          "type": "http",
+          "url": "https://cheapcarent.com/mcp"
+        }
+      },
+      "source": "Local Servers",
+      "license": "MIT"
+    },
     {
       "name": "firstsales-mcp",
       "display_name": "FirstSales MCP",
