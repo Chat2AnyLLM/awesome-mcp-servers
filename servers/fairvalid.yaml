@@ -1,0 +1,16 @@
+slug: fairvalid
+title: FairValid MCP
+description: "Official hosted MCP for email verification and FairMatch lead search and unlocks; an account with OAuth or an API key is required, with 300 shared free credits each month and optional paid credits; the hosted service is proprietary and the public integration package is MIT-licensed."
+url: https://github.com/moonlitnayeem/fairvalid-ai
+tags:
+  - email-verification
+  - lead-generation
+  - oauth
+  - freemium
+category: communication
+author: FairValid
+license: Proprietary
+installations:
+  http:
+    type: http
+    url: https://mcp.fairvalid.com/mcp
