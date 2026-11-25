@@ -1,0 +1,13 @@
+slug: flowfeed-mcp
+title: FlowFeed MCP
+description: Hosted remote MCP server (Streamable HTTP, OAuth) with real-time macro, forex and crypto news, an economic calendar and central bank releases. Paid.
+url: https://github.com/loyt1/flowfeed-mcp
+tags:
+  - finance
+  - news
+  - forex
+  - crypto
+  - economic-calendar
+  - remote
+category: data
+author: loyt1
