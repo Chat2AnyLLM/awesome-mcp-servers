@@ -1,0 +1,24 @@
+slug: ipgeolocation-io-mcp
+title: IPGeolocation.io MCP Server
+description: Look up IP geolocation, company information, ASN and network data, and abuse contacts. Check for VPN, proxy, Tor, bot, hosting and spam signals. Other tools cover time zones, astronomy, currency data and user-agent parsing.
+url: https://github.com/IPGeolocation/ipgeolocation-io-mcp
+homepage: https://ipgeolocation.io/integrations/ipgeolocation-io-mcp
+tags:
+  - ip-geolocation
+  - asn
+  - ip-security
+category: data
+author: IPGeolocation
+license: MIT
+installations:
+  npm:
+    type: npm
+    command: npx
+    args: ["-y", "ipgeolocation-io-mcp@latest"]
+    env:
+      IPGEOLOCATION_API_KEY: "<YOUR_API_KEY>"
+  remote:
+    type: http
+    url: https://mcp.ipgeolocation.io/mcp
+    headers:
+      X-IPGeolocation-API-Key: "<YOUR_API_KEY>"
